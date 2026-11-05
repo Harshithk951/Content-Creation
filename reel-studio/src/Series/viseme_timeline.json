@@ -1,0 +1,9282 @@
+[
+  {
+    "frame": 0,
+    "speaker": "boy",
+    "viseme": "REST",
+    "jaw": 0.6,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1,
+    "speaker": "boy",
+    "viseme": "REST",
+    "jaw": 0.6,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 2,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 3,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 4,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 5,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 6,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 7,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 8,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 9,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 10,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 11,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 12,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 13,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 14,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 15,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 16,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 17,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 18,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 19,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 20,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 21,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 22,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 23,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 24,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 25,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 26,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 27,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Claude,"
+  },
+  {
+    "frame": 28,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "do"
+  },
+  {
+    "frame": 29,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "do"
+  },
+  {
+    "frame": 30,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "do"
+  },
+  {
+    "frame": 31,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "do"
+  },
+  {
+    "frame": 32,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "do"
+  },
+  {
+    "frame": 33,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 34,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 35,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 36,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 37,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 38,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 39,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 40,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 41,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 42,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 43,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 44,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 45,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": true,
+    "word": "voice"
+  },
+  {
+    "frame": 46,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": true,
+    "word": "voice"
+  },
+  {
+    "frame": 47,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": true,
+    "word": "voice"
+  },
+  {
+    "frame": 48,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 49,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 50,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 51,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 52,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "apps"
+  },
+  {
+    "frame": 53,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "apps"
+  },
+  {
+    "frame": 54,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "apps"
+  },
+  {
+    "frame": 55,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "apps"
+  },
+  {
+    "frame": 56,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "apps"
+  },
+  {
+    "frame": 57,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "apps"
+  },
+  {
+    "frame": 58,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "apps"
+  },
+  {
+    "frame": 59,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "apps"
+  },
+  {
+    "frame": 60,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "apps"
+  },
+  {
+    "frame": 61,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "apps"
+  },
+  {
+    "frame": 62,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 63,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 64,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 65,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 66,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 67,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 68,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 69,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 70,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 71,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 72,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 73,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 74,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 75,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 76,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 77,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 78,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 79,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 80,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "charge"
+  },
+  {
+    "frame": 81,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 82,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 83,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 84,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 85,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 86,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 87,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 88,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 89,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 90,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 91,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 92,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 93,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 94,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 95,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 96,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$50"
+  },
+  {
+    "frame": 97,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 98,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 99,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 100,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 101,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 102,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 103,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 104,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 105,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 106,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 107,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 108,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 109,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "every"
+  },
+  {
+    "frame": 110,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 111,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 112,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 113,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 114,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 115,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 116,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 117,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 118,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 119,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 120,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 121,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 122,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 123,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 124,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 125,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 126,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 127,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 128,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 129,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 130,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 131,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 132,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 133,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "month?"
+  },
+  {
+    "frame": 134,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 135,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 136,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 137,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 138,
+    "speaker": "claude",
+    "viseme": "REST",
+    "jaw": 0.6,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 139,
+    "speaker": "claude",
+    "viseme": "REST",
+    "jaw": 0.6,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 140,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "Because"
+  },
+  {
+    "frame": 141,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "Because"
+  },
+  {
+    "frame": 142,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "Because"
+  },
+  {
+    "frame": 143,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "Because"
+  },
+  {
+    "frame": 144,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "Because"
+  },
+  {
+    "frame": 145,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "Because"
+  },
+  {
+    "frame": 146,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "Because"
+  },
+  {
+    "frame": 147,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "Because"
+  },
+  {
+    "frame": 148,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "Because"
+  },
+  {
+    "frame": 149,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "Because"
+  },
+  {
+    "frame": 150,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": true,
+    "word": "Because"
+  },
+  {
+    "frame": 151,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": true,
+    "word": "Because"
+  },
+  {
+    "frame": 152,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": true,
+    "word": "Because"
+  },
+  {
+    "frame": 153,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 154,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 155,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 156,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 157,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 158,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 159,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 160,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 161,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 162,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 163,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 164,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "people"
+  },
+  {
+    "frame": 165,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "don't"
+  },
+  {
+    "frame": 166,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "don't"
+  },
+  {
+    "frame": 167,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "don't"
+  },
+  {
+    "frame": 168,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "don't"
+  },
+  {
+    "frame": 169,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "don't"
+  },
+  {
+    "frame": 170,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "don't"
+  },
+  {
+    "frame": 171,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "don't"
+  },
+  {
+    "frame": 172,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "don't"
+  },
+  {
+    "frame": 173,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "don't"
+  },
+  {
+    "frame": 174,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "don't"
+  },
+  {
+    "frame": 175,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 176,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 177,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 178,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 179,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 180,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 181,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 182,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 183,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 184,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 185,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 186,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 187,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 188,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 189,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 190,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 191,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 192,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 193,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 194,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 195,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Kokoro"
+  },
+  {
+    "frame": 196,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 197,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 198,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 199,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 200,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 201,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 202,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 203,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 204,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 205,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 206,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 207,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 208,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 209,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 210,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 211,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 212,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "exists,"
+  },
+  {
+    "frame": 213,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "it's"
+  },
+  {
+    "frame": 214,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "it's"
+  },
+  {
+    "frame": 215,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "it's"
+  },
+  {
+    "frame": 216,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "it's"
+  },
+  {
+    "frame": 217,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "it's"
+  },
+  {
+    "frame": 218,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "it's"
+  },
+  {
+    "frame": 219,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "it's"
+  },
+  {
+    "frame": 220,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 221,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 222,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 223,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 224,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 225,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 226,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 227,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 228,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 229,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 230,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 231,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 232,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 233,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 234,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 235,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 236,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 237,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "free."
+  },
+  {
+    "frame": 238,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "free."
+  },
+  {
+    "frame": 239,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "free."
+  },
+  {
+    "frame": 240,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free."
+  },
+  {
+    "frame": 241,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free."
+  },
+  {
+    "frame": 242,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free."
+  },
+  {
+    "frame": 243,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free."
+  },
+  {
+    "frame": 244,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free."
+  },
+  {
+    "frame": 245,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free."
+  },
+  {
+    "frame": 246,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free."
+  },
+  {
+    "frame": 247,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free."
+  },
+  {
+    "frame": 248,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 249,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 250,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 251,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 252,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 253,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 254,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 255,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": true,
+    "word": ""
+  },
+  {
+    "frame": 256,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": true,
+    "word": ""
+  },
+  {
+    "frame": 257,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": true,
+    "word": ""
+  },
+  {
+    "frame": 258,
+    "speaker": "boy",
+    "viseme": "REST",
+    "jaw": 0.6,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 259,
+    "speaker": "boy",
+    "viseme": "REST",
+    "jaw": 0.6,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 260,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 261,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 262,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 263,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 264,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 265,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 266,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 267,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 268,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 269,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 270,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 271,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 272,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 273,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 274,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 275,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 276,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 277,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 278,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 279,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "explain"
+  },
+  {
+    "frame": 280,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "it"
+  },
+  {
+    "frame": 281,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "it"
+  },
+  {
+    "frame": 282,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "it"
+  },
+  {
+    "frame": 283,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 284,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 285,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 286,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "me"
+  },
+  {
+    "frame": 287,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "me"
+  },
+  {
+    "frame": 288,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "me"
+  },
+  {
+    "frame": 289,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "me"
+  },
+  {
+    "frame": 290,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 291,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 292,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 293,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 294,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 295,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 296,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 297,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 298,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "I'm"
+  },
+  {
+    "frame": 299,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "I'm"
+  },
+  {
+    "frame": 300,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "I'm"
+  },
+  {
+    "frame": 301,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 302,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 303,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 304,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 305,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 306,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 307,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 308,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 309,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 310,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 311,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 312,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 313,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 314,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "five."
+  },
+  {
+    "frame": 315,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "What"
+  },
+  {
+    "frame": 316,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "What"
+  },
+  {
+    "frame": 317,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "What"
+  },
+  {
+    "frame": 318,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "What"
+  },
+  {
+    "frame": 319,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "What"
+  },
+  {
+    "frame": 320,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "What"
+  },
+  {
+    "frame": 321,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "What"
+  },
+  {
+    "frame": 322,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "What"
+  },
+  {
+    "frame": 323,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "What"
+  },
+  {
+    "frame": 324,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "is"
+  },
+  {
+    "frame": 325,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "it?"
+  },
+  {
+    "frame": 326,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "it?"
+  },
+  {
+    "frame": 327,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "it?"
+  },
+  {
+    "frame": 328,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "it?"
+  },
+  {
+    "frame": 329,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "it?"
+  },
+  {
+    "frame": 330,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "it?"
+  },
+  {
+    "frame": 331,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "it?"
+  },
+  {
+    "frame": 332,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "it?"
+  },
+  {
+    "frame": 333,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "it?"
+  },
+  {
+    "frame": 334,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "it?"
+  },
+  {
+    "frame": 335,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 336,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 337,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 338,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 339,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 340,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 341,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 342,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 343,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 344,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 345,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 346,
+    "speaker": "claude",
+    "viseme": "REST",
+    "jaw": 0.6,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 347,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "It's"
+  },
+  {
+    "frame": 348,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "It's"
+  },
+  {
+    "frame": 349,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "It's"
+  },
+  {
+    "frame": 350,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "It's"
+  },
+  {
+    "frame": 351,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "It's"
+  },
+  {
+    "frame": 352,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "It's"
+  },
+  {
+    "frame": 353,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "It's"
+  },
+  {
+    "frame": 354,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "It's"
+  },
+  {
+    "frame": 355,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "It's"
+  },
+  {
+    "frame": 356,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "It's"
+  },
+  {
+    "frame": 357,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "It's"
+  },
+  {
+    "frame": 358,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "a"
+  },
+  {
+    "frame": 359,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "a"
+  },
+  {
+    "frame": 360,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": true,
+    "word": "a"
+  },
+  {
+    "frame": 361,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": true,
+    "word": "tiny"
+  },
+  {
+    "frame": 362,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": true,
+    "word": "tiny"
+  },
+  {
+    "frame": 363,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "tiny"
+  },
+  {
+    "frame": 364,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "tiny"
+  },
+  {
+    "frame": 365,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "tiny"
+  },
+  {
+    "frame": 366,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "tiny"
+  },
+  {
+    "frame": 367,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "tiny"
+  },
+  {
+    "frame": 368,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "tiny"
+  },
+  {
+    "frame": 369,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "tiny"
+  },
+  {
+    "frame": 370,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "tiny"
+  },
+  {
+    "frame": 371,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "tiny"
+  },
+  {
+    "frame": 372,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "tiny"
+  },
+  {
+    "frame": 373,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 374,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 375,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 376,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 377,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 378,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "AI"
+  },
+  {
+    "frame": 379,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 380,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 381,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 382,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 383,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 384,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 385,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 386,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 387,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 388,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 389,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 390,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 391,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 392,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 393,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 394,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 395,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 396,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 397,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 398,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 399,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 400,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 401,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 402,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 403,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 404,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 405,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 406,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 407,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 408,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 409,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 410,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "model,"
+  },
+  {
+    "frame": 411,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "takes"
+  },
+  {
+    "frame": 412,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "takes"
+  },
+  {
+    "frame": 413,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "takes"
+  },
+  {
+    "frame": 414,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "takes"
+  },
+  {
+    "frame": 415,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "takes"
+  },
+  {
+    "frame": 416,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "takes"
+  },
+  {
+    "frame": 417,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "takes"
+  },
+  {
+    "frame": 418,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "takes"
+  },
+  {
+    "frame": 419,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "takes"
+  },
+  {
+    "frame": 420,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "10"
+  },
+  {
+    "frame": 421,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "10"
+  },
+  {
+    "frame": 422,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "10"
+  },
+  {
+    "frame": 423,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "10"
+  },
+  {
+    "frame": 424,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "10"
+  },
+  {
+    "frame": 425,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "10"
+  },
+  {
+    "frame": 426,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "10"
+  },
+  {
+    "frame": 427,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "10"
+  },
+  {
+    "frame": 428,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "10"
+  },
+  {
+    "frame": 429,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "seconds"
+  },
+  {
+    "frame": 430,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "seconds"
+  },
+  {
+    "frame": 431,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "seconds"
+  },
+  {
+    "frame": 432,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "seconds"
+  },
+  {
+    "frame": 433,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "seconds"
+  },
+  {
+    "frame": 434,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "seconds"
+  },
+  {
+    "frame": 435,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "seconds"
+  },
+  {
+    "frame": 436,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "seconds"
+  },
+  {
+    "frame": 437,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "seconds"
+  },
+  {
+    "frame": 438,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "seconds"
+  },
+  {
+    "frame": 439,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "seconds"
+  },
+  {
+    "frame": 440,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 441,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 442,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 443,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 444,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 445,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 446,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 447,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 448,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 449,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 450,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 451,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 452,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 453,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 454,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 455,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 456,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 457,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 458,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 459,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 460,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 461,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 462,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 463,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 464,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "download,"
+  },
+  {
+    "frame": 465,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": true,
+    "word": "download,"
+  },
+  {
+    "frame": 466,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": true,
+    "word": "talks"
+  },
+  {
+    "frame": 467,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": true,
+    "word": "talks"
+  },
+  {
+    "frame": 468,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "talks"
+  },
+  {
+    "frame": 469,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "talks"
+  },
+  {
+    "frame": 470,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "talks"
+  },
+  {
+    "frame": 471,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "talks"
+  },
+  {
+    "frame": 472,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "talks"
+  },
+  {
+    "frame": 473,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "talks"
+  },
+  {
+    "frame": 474,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "talks"
+  },
+  {
+    "frame": 475,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 476,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 477,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 478,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 479,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 480,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 481,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 482,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 483,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 484,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 485,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 486,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 487,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 488,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 489,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 490,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 491,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 492,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 493,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 494,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 495,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 496,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 497,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 498,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "completely"
+  },
+  {
+    "frame": 499,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 500,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 501,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 502,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 503,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 504,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 505,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 506,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 507,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 508,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 509,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 510,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 511,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 512,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 513,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 514,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 515,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 516,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 517,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 518,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "offline"
+  },
+  {
+    "frame": 519,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "and"
+  },
+  {
+    "frame": 520,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "and"
+  },
+  {
+    "frame": 521,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "and"
+  },
+  {
+    "frame": 522,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "runs"
+  },
+  {
+    "frame": 523,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "runs"
+  },
+  {
+    "frame": 524,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "runs"
+  },
+  {
+    "frame": 525,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "runs"
+  },
+  {
+    "frame": 526,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "runs"
+  },
+  {
+    "frame": 527,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "runs"
+  },
+  {
+    "frame": 528,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "runs"
+  },
+  {
+    "frame": 529,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "on"
+  },
+  {
+    "frame": 530,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "on"
+  },
+  {
+    "frame": 531,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "on"
+  },
+  {
+    "frame": 532,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "on"
+  },
+  {
+    "frame": 533,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "on"
+  },
+  {
+    "frame": 534,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "any"
+  },
+  {
+    "frame": 535,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "any"
+  },
+  {
+    "frame": 536,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "any"
+  },
+  {
+    "frame": 537,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "any"
+  },
+  {
+    "frame": 538,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "any"
+  },
+  {
+    "frame": 539,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "any"
+  },
+  {
+    "frame": 540,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 541,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 542,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 543,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 544,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 545,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 546,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 547,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 548,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 549,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 550,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 551,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 552,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 553,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "normal"
+  },
+  {
+    "frame": 554,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 555,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 556,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 557,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 558,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 559,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 560,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 561,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 562,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 563,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 564,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 565,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 566,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 567,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 568,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 569,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "laptop."
+  },
+  {
+    "frame": 570,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": true,
+    "word": "laptop."
+  },
+  {
+    "frame": 571,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": true,
+    "word": ""
+  },
+  {
+    "frame": 572,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": true,
+    "word": ""
+  },
+  {
+    "frame": 573,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 574,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 575,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 576,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 577,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 578,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 579,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 580,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 581,
+    "speaker": "boy",
+    "viseme": "REST",
+    "jaw": 0.6,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 582,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Does"
+  },
+  {
+    "frame": 583,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Does"
+  },
+  {
+    "frame": 584,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Does"
+  },
+  {
+    "frame": 585,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Does"
+  },
+  {
+    "frame": 586,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Does"
+  },
+  {
+    "frame": 587,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Does"
+  },
+  {
+    "frame": 588,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "it"
+  },
+  {
+    "frame": 589,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "it"
+  },
+  {
+    "frame": 590,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "it"
+  },
+  {
+    "frame": 591,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "it"
+  },
+  {
+    "frame": 592,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 593,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 594,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 595,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 596,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 597,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 598,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 599,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 600,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 601,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 602,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 603,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 604,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 605,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 606,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "actually"
+  },
+  {
+    "frame": 607,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "sound"
+  },
+  {
+    "frame": 608,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sound"
+  },
+  {
+    "frame": 609,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "sound"
+  },
+  {
+    "frame": 610,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sound"
+  },
+  {
+    "frame": 611,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "sound"
+  },
+  {
+    "frame": 612,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sound"
+  },
+  {
+    "frame": 613,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "sound"
+  },
+  {
+    "frame": 614,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sound"
+  },
+  {
+    "frame": 615,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "sound"
+  },
+  {
+    "frame": 616,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sound"
+  },
+  {
+    "frame": 617,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 618,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 619,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 620,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 621,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 622,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 623,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 624,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "a"
+  },
+  {
+    "frame": 625,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "a"
+  },
+  {
+    "frame": 626,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "real"
+  },
+  {
+    "frame": 627,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "real"
+  },
+  {
+    "frame": 628,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "real"
+  },
+  {
+    "frame": 629,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "real"
+  },
+  {
+    "frame": 630,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "real"
+  },
+  {
+    "frame": 631,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "real"
+  },
+  {
+    "frame": 632,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "real"
+  },
+  {
+    "frame": 633,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "real"
+  },
+  {
+    "frame": 634,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 635,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 636,
+    "speaker": "boy",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 637,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 638,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 639,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 640,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 641,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 642,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 643,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 644,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 645,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 646,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 647,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 648,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 649,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 650,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 651,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 652,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "person?"
+  },
+  {
+    "frame": 653,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 654,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 655,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 656,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 657,
+    "speaker": "claude",
+    "viseme": "REST",
+    "jaw": 0.6,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 658,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 659,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 660,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 661,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 662,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 663,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 664,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 665,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 666,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 667,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 668,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 669,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 670,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 671,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 672,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 673,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 674,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 675,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": true,
+    "word": "American,"
+  },
+  {
+    "frame": 676,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": true,
+    "word": "American,"
+  },
+  {
+    "frame": 677,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": true,
+    "word": "American,"
+  },
+  {
+    "frame": 678,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 679,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 680,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 681,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "American,"
+  },
+  {
+    "frame": 682,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 683,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 684,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 685,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 686,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 687,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 688,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 689,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 690,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 691,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 692,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 693,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 694,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 695,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 696,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 697,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 698,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 699,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 700,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 701,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 702,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 703,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 704,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "British,"
+  },
+  {
+    "frame": 705,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 706,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 707,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 708,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 709,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 710,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 711,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 712,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 713,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 714,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 715,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 716,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 717,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 718,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 719,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "male,"
+  },
+  {
+    "frame": 720,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 721,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 722,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 723,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 724,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 725,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 726,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 727,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 728,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 729,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 730,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 731,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 732,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 733,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 734,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 735,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 736,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 737,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 738,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "female,"
+  },
+  {
+    "frame": 739,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "even"
+  },
+  {
+    "frame": 740,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "even"
+  },
+  {
+    "frame": 741,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "even"
+  },
+  {
+    "frame": 742,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "even"
+  },
+  {
+    "frame": 743,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "even"
+  },
+  {
+    "frame": 744,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "a"
+  },
+  {
+    "frame": 745,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "a"
+  },
+  {
+    "frame": 746,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 747,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 748,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 749,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 750,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 751,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 752,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 753,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 754,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 755,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 756,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 757,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 758,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 759,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 760,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 761,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 762,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 763,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "sarcastic"
+  },
+  {
+    "frame": 764,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 765,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 766,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 767,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 768,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 769,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 770,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 771,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 772,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 773,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 774,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 775,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "genius"
+  },
+  {
+    "frame": 776,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 777,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 778,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 779,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 780,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": true,
+    "word": "like"
+  },
+  {
+    "frame": 781,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": true,
+    "word": "like"
+  },
+  {
+    "frame": 782,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": true,
+    "word": "like"
+  },
+  {
+    "frame": 783,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 784,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 785,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "like"
+  },
+  {
+    "frame": 786,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "me."
+  },
+  {
+    "frame": 787,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "me."
+  },
+  {
+    "frame": 788,
+    "speaker": "claude",
+    "viseme": "CLOSED_MBP",
+    "jaw": 0.1,
+    "blink": false,
+    "word": "me."
+  },
+  {
+    "frame": 789,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "me."
+  },
+  {
+    "frame": 790,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "me."
+  },
+  {
+    "frame": 791,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "me."
+  },
+  {
+    "frame": 792,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "me."
+  },
+  {
+    "frame": 793,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "me."
+  },
+  {
+    "frame": 794,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "me."
+  },
+  {
+    "frame": 795,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.8,
+    "blink": false,
+    "word": "me."
+  },
+  {
+    "frame": 796,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 797,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 798,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 799,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 800,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 801,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 802,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 803,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 804,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 805,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 806,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 807,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 808,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 809,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 810,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 811,
+    "speaker": "boy",
+    "viseme": "REST",
+    "jaw": 0.6,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 812,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "So"
+  },
+  {
+    "frame": 813,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "So"
+  },
+  {
+    "frame": 814,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "what"
+  },
+  {
+    "frame": 815,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "what"
+  },
+  {
+    "frame": 816,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "what"
+  },
+  {
+    "frame": 817,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "what"
+  },
+  {
+    "frame": 818,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "what"
+  },
+  {
+    "frame": 819,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "what"
+  },
+  {
+    "frame": 820,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "what"
+  },
+  {
+    "frame": 821,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "what"
+  },
+  {
+    "frame": 822,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "what"
+  },
+  {
+    "frame": 823,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "does"
+  },
+  {
+    "frame": 824,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "does"
+  },
+  {
+    "frame": 825,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "does"
+  },
+  {
+    "frame": 826,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "does"
+  },
+  {
+    "frame": 827,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "does"
+  },
+  {
+    "frame": 828,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "does"
+  },
+  {
+    "frame": 829,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "does"
+  },
+  {
+    "frame": 830,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "does"
+  },
+  {
+    "frame": 831,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "our"
+  },
+  {
+    "frame": 832,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "our"
+  },
+  {
+    "frame": 833,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "our"
+  },
+  {
+    "frame": 834,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "our"
+  },
+  {
+    "frame": 835,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "our"
+  },
+  {
+    "frame": 836,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "our"
+  },
+  {
+    "frame": 837,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 838,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 839,
+    "speaker": "boy",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 840,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 841,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 842,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 843,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 844,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 845,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 846,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "voice"
+  },
+  {
+    "frame": 847,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "set"
+  },
+  {
+    "frame": 848,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "set"
+  },
+  {
+    "frame": 849,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "set"
+  },
+  {
+    "frame": 850,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "set"
+  },
+  {
+    "frame": 851,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "set"
+  },
+  {
+    "frame": 852,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "set"
+  },
+  {
+    "frame": 853,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "up"
+  },
+  {
+    "frame": 854,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "up"
+  },
+  {
+    "frame": 855,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "up"
+  },
+  {
+    "frame": 856,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "up"
+  },
+  {
+    "frame": 857,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 858,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 859,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 860,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 861,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 862,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 863,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 864,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 865,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 866,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 867,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 868,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 869,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 870,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 871,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "cost?"
+  },
+  {
+    "frame": 872,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 873,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 874,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 875,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 876,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 877,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 878,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 879,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 880,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$0,"
+  },
+  {
+    "frame": 881,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$0,"
+  },
+  {
+    "frame": 882,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$0,"
+  },
+  {
+    "frame": 883,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$0,"
+  },
+  {
+    "frame": 884,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$0,"
+  },
+  {
+    "frame": 885,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": true,
+    "word": "$0,"
+  },
+  {
+    "frame": 886,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": true,
+    "word": "$0,"
+  },
+  {
+    "frame": 887,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": true,
+    "word": "$0,"
+  },
+  {
+    "frame": 888,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$0,"
+  },
+  {
+    "frame": 889,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$0,"
+  },
+  {
+    "frame": 890,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$0,"
+  },
+  {
+    "frame": 891,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "$0,"
+  },
+  {
+    "frame": 892,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 893,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 894,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 895,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 896,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 897,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 898,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 899,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 900,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 901,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 902,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 903,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 904,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 905,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 906,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 907,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 908,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "comment"
+  },
+  {
+    "frame": 909,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "free"
+  },
+  {
+    "frame": 910,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "free"
+  },
+  {
+    "frame": 911,
+    "speaker": "claude",
+    "viseme": "TEETH_FV",
+    "jaw": 0.4,
+    "blink": false,
+    "word": "free"
+  },
+  {
+    "frame": 912,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free"
+  },
+  {
+    "frame": 913,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free"
+  },
+  {
+    "frame": 914,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free"
+  },
+  {
+    "frame": 915,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.7,
+    "blink": false,
+    "word": "free"
+  },
+  {
+    "frame": 916,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "and"
+  },
+  {
+    "frame": 917,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "and"
+  },
+  {
+    "frame": 918,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "and"
+  },
+  {
+    "frame": 919,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "and"
+  },
+  {
+    "frame": 920,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "and"
+  },
+  {
+    "frame": 921,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "and"
+  },
+  {
+    "frame": 922,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "and"
+  },
+  {
+    "frame": 923,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "I'll"
+  },
+  {
+    "frame": 924,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "I'll"
+  },
+  {
+    "frame": 925,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "I'll"
+  },
+  {
+    "frame": 926,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "I'll"
+  },
+  {
+    "frame": 927,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "I'll"
+  },
+  {
+    "frame": 928,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "I'll"
+  },
+  {
+    "frame": 929,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "I'll"
+  },
+  {
+    "frame": 930,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "I'll"
+  },
+  {
+    "frame": 931,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "I'll"
+  },
+  {
+    "frame": 932,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 933,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 934,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 935,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 936,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 937,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 938,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 939,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 940,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 941,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 942,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 943,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 944,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 945,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 946,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 947,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 948,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "the"
+  },
+  {
+    "frame": 949,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "the"
+  },
+  {
+    "frame": 950,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "the"
+  },
+  {
+    "frame": 951,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "the"
+  },
+  {
+    "frame": 952,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 953,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 954,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 955,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 956,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 957,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 958,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 959,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 960,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 961,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 962,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 963,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 964,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 965,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 966,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 967,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 968,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 969,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 970,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 971,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 972,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 973,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 974,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "step-by-step"
+  },
+  {
+    "frame": 975,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 976,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 977,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 978,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 979,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 980,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 981,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 982,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 983,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 984,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 985,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 986,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 987,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "setup"
+  },
+  {
+    "frame": 988,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "guide."
+  },
+  {
+    "frame": 989,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "guide."
+  },
+  {
+    "frame": 990,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": true,
+    "word": "guide."
+  },
+  {
+    "frame": 991,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": true,
+    "word": "guide."
+  },
+  {
+    "frame": 992,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": true,
+    "word": "guide."
+  },
+  {
+    "frame": 993,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "guide."
+  },
+  {
+    "frame": 994,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "guide."
+  },
+  {
+    "frame": 995,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "guide."
+  },
+  {
+    "frame": 996,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "guide."
+  },
+  {
+    "frame": 997,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "guide."
+  },
+  {
+    "frame": 998,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "guide."
+  },
+  {
+    "frame": 999,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "guide."
+  },
+  {
+    "frame": 1000,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "guide."
+  },
+  {
+    "frame": 1001,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "guide."
+  },
+  {
+    "frame": 1002,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1003,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1004,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1005,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1006,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1007,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1008,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1009,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1010,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1011,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1012,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1013,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1014,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1015,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1016,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1017,
+    "speaker": "boy",
+    "viseme": "REST",
+    "jaw": 0.6,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1018,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 1019,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 1020,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 1021,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 1022,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 1023,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 1024,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 1025,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 1026,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 1027,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 1028,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Wait,"
+  },
+  {
+    "frame": 1029,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 1030,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 1031,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 1032,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 1033,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 1034,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 1035,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 1036,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 1037,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 1038,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 1039,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 1040,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 1041,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 1042,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 1043,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "know"
+  },
+  {
+    "frame": 1044,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "how"
+  },
+  {
+    "frame": 1045,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "how"
+  },
+  {
+    "frame": 1046,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "how"
+  },
+  {
+    "frame": 1047,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "how"
+  },
+  {
+    "frame": 1048,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "how"
+  },
+  {
+    "frame": 1049,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "how"
+  },
+  {
+    "frame": 1050,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 1051,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 1052,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 1053,
+    "speaker": "boy",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "to"
+  },
+  {
+    "frame": 1054,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 1055,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 1056,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 1057,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 1058,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 1059,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 1060,
+    "speaker": "boy",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "send"
+  },
+  {
+    "frame": 1061,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1062,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1063,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1064,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1065,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1066,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1067,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1068,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1069,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1070,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1071,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1072,
+    "speaker": "boy",
+    "viseme": "TALK_MID",
+    "jaw": 0.6,
+    "blink": false,
+    "word": "DMs?"
+  },
+  {
+    "frame": 1073,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1074,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1075,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1076,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1077,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1078,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1079,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1080,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1081,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1082,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1083,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1084,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1085,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1086,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1087,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "No,"
+  },
+  {
+    "frame": 1088,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 1089,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 1090,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 1091,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 1092,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "you"
+  },
+  {
+    "frame": 1093,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1094,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1095,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": true,
+    "word": "will."
+  },
+  {
+    "frame": 1096,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": true,
+    "word": "will."
+  },
+  {
+    "frame": 1097,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": true,
+    "word": "will."
+  },
+  {
+    "frame": 1098,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1099,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1100,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1101,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1102,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1103,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1104,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1105,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1106,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1107,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1108,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1109,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1110,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1111,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1112,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1113,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1114,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "will."
+  },
+  {
+    "frame": 1115,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "Now"
+  },
+  {
+    "frame": 1116,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "Now"
+  },
+  {
+    "frame": 1117,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "Now"
+  },
+  {
+    "frame": 1118,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "go"
+  },
+  {
+    "frame": 1119,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "go"
+  },
+  {
+    "frame": 1120,
+    "speaker": "claude",
+    "viseme": "VOWEL_ROUND",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "go"
+  },
+  {
+    "frame": 1121,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1122,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1123,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1124,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1125,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1126,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1127,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1128,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1129,
+    "speaker": "claude",
+    "viseme": "TALK_MID",
+    "jaw": 0.5,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1130,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1131,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 1.0,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1132,
+    "speaker": "claude",
+    "viseme": "VOWEL_OPEN",
+    "jaw": 0.85,
+    "blink": false,
+    "word": "comment."
+  },
+  {
+    "frame": 1133,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1134,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1135,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1136,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1137,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1138,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1139,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1140,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1141,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1142,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1143,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1144,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1145,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1146,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1147,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1148,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1149,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1150,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1151,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1152,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1153,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1154,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1155,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1156,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1157,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1158,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  },
+  {
+    "frame": 1159,
+    "speaker": null,
+    "viseme": "REST",
+    "jaw": 0.0,
+    "blink": false,
+    "word": ""
+  }
+]

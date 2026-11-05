@@ -1,0 +1,211 @@
+[
+  {
+    "timestamps": {
+      "from": "00:00:00,000",
+      "to": "00:00:00,010"
+    },
+    "offsets": {
+      "from": 0,
+      "to": 10
+    },
+    "text": ""
+  },
+  {
+    "timestamps": {
+      "from": "00:00:00,010",
+      "to": "00:00:00,480"
+    },
+    "offsets": {
+      "from": 10,
+      "to": 480
+    },
+    "text": " Welcome"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:00,480",
+      "to": "00:00:00,620"
+    },
+    "offsets": {
+      "from": 480,
+      "to": 620
+    },
+    "text": " to"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:00,620",
+      "to": "00:00:00,830"
+    },
+    "offsets": {
+      "from": 620,
+      "to": 830
+    },
+    "text": " the"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:00,830",
+      "to": "00:00:01,460"
+    },
+    "offsets": {
+      "from": 830,
+      "to": 1460
+    },
+    "text": " Automated"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:01,460",
+      "to": "00:00:02,070"
+    },
+    "offsets": {
+      "from": 1460,
+      "to": 2070
+    },
+    "text": " Instagram"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:02,070",
+      "to": "00:00:02,350"
+    },
+    "offsets": {
+      "from": 2070,
+      "to": 2350
+    },
+    "text": " Real"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:02,350",
+      "to": "00:00:02,960"
+    },
+    "offsets": {
+      "from": 2350,
+      "to": 2960
+    },
+    "text": " Studio,"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:02,960",
+      "to": "00:00:03,120"
+    },
+    "offsets": {
+      "from": 2960,
+      "to": 3120
+    },
+    "text": " this"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:03,120",
+      "to": "00:00:03,650"
+    },
+    "offsets": {
+      "from": 3120,
+      "to": 3650
+    },
+    "text": " toolchain"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:03,650",
+      "to": "00:00:04,350"
+    },
+    "offsets": {
+      "from": 3650,
+      "to": 4350
+    },
+    "text": " transcribes"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:04,350",
+      "to": "00:00:04,680"
+    },
+    "offsets": {
+      "from": 4350,
+      "to": 4680
+    },
+    "text": " audio"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:04,680",
+      "to": "00:00:04,960"
+    },
+    "offsets": {
+      "from": 4680,
+      "to": 4960
+    },
+    "text": " with"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:04,960",
+      "to": "00:00:05,240"
+    },
+    "offsets": {
+      "from": 4960,
+      "to": 5240
+    },
+    "text": " whisper"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:05,240",
+      "to": "00:00:05,440"
+    },
+    "offsets": {
+      "from": 5240,
+      "to": 5440
+    },
+    "text": " and"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:05,440",
+      "to": "00:00:05,900"
+    },
+    "offsets": {
+      "from": 5440,
+      "to": 5900
+    },
+    "text": " creates"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:05,900",
+      "to": "00:00:06,230"
+    },
+    "offsets": {
+      "from": 5900,
+      "to": 6230
+    },
+    "text": " video"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:06,230",
+      "to": "00:00:06,490"
+    },
+    "offsets": {
+      "from": 6230,
+      "to": 6490
+    },
+    "text": " with"
+  },
+  {
+    "timestamps": {
+      "from": "00:00:06,490",
+      "to": "00:00:07,080"
+    },
+    "offsets": {
+      "from": 6490,
+      "to": 7080
+    },
+    "text": " remotion."
+  }
+]

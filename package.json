@@ -1,0 +1,12 @@
+{
+  "name": "reelvault-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ReelVault — 100 Days of Free AI Personal Video Library",
+  "scripts": {
+    "dev": "npm --prefix reelvault run dev",
+    "build": "npm --prefix reelvault run build",
+    "start": "npm --prefix reelvault run start",
+    "lint": "npm --prefix reelvault run lint"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd reelvault && npm install && npm run build",
+  "outputDirectory": "reelvault/.next",
+  "framework": "nextjs"
+}

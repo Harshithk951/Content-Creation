@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 4%;
+    --foreground: 210 20% 98%;
+    --card: 224 16% 7%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 16% 7%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 18 100% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 14% 15%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 220 14% 18%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 14% 16%;
+    --input: 220 14% 16%;
+    --ring: 18 100% 56%;
+    --radius: 0.75rem;
+  }
+}
+
+body {
+  background-color: #090a0d;
+  color: #f4f4f5;
+  font-feature-settings: "rlig" 1, "calt" 1;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090a0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #23262f;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #373a46;
+}
+
+/* Subtle Glassmorphism Card Effect */
+.glass-panel {
+  background: rgba(17, 18, 22, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glow-orange {
+  box-shadow: 0 0 25px -5px rgba(255, 90, 31, 0.3);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.3);
+}
+
+/* Vertical 9:16 Video Container */
+.aspect-reel {
+  aspect-ratio: 9 / 16;
+}
