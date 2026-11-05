@@ -78,9 +78,9 @@ export default function CaptionsPage() {
       hashtags,
       "",
       "---",
-      `📌 PINNED COMMENT:\n${pinnedComment}`,
+      `PINNED COMMENT:\n${pinnedComment}`,
       "",
-      `🎯 CTA:\n${cta}`,
+      `CALL TO ACTION:\n${cta}`,
     ].join("\n");
 
     handleCopy(fullPackage, "full-package", "Full Publishing Package");
@@ -111,28 +111,31 @@ export default function CaptionsPage() {
   return (
     <div className="space-y-6 animate-fade-in pb-16">
       {/* Top Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.06] pb-5">
         <div>
-          <h2 className="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
-            <Hash className="w-6 h-6 text-brand" />
-            Captions & Hashtags Manager
+          <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.25em] text-brand uppercase font-bold">
+            <Hash className="w-3.5 h-3.5" />
+            <span>Distribution Kit</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mt-1">
+            Captions & Publishing Package
           </h2>
-          <p className="text-sm text-zinc-400 mt-0.5">
-            Craft, organize, and 1-click copy publishing packages for Instagram Reels.
+          <p className="text-xs text-zinc-400 mt-1">
+            Instagram Reel caption, verified hashtags, and pinned comment for each episode.
           </p>
         </div>
 
         {/* 1-Click Copy Full Package CTA */}
         <button
           onClick={handleCopyFullPackage}
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand hover:bg-brand-hover text-white text-sm font-bold transition-all shadow-glow hover:scale-[1.02] active:scale-[0.98]"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-bold transition-all hover:scale-[1.02] active:scale-[0.98]"
         >
           {copiedKey === "full-package" ? (
             <Check className="w-4 h-4" />
           ) : (
-            <Sparkles className="w-4 h-4" />
+            <Copy className="w-4 h-4" />
           )}
-          <span>{copiedKey === "full-package" ? "Package Copied!" : "Copy Full Publishing Package"}</span>
+          <span>{copiedKey === "full-package" ? "Package Copied!" : "Copy Full Publishing Suite"}</span>
         </button>
       </div>
 

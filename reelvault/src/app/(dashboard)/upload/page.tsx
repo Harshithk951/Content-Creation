@@ -45,7 +45,7 @@ export default function UploadPage() {
     "Stop paying $40/mo for tools you can run completely free! Here is how Harshith and Claude set it up in 2 minutes. Comment below for the GitHub repo & setup code!"
   );
   const [hashtags, setHashtags] = useState(
-    "#100DaysOfFreeAI #AI #OpenSource #DevTools #CodingLife #WebDev #FreeAI #TechReels #Supabase"
+    "#100DaysOfFreeAI #AI #OpenSource #DevTools #CodingLife #WebDev #FreeAI #TechReels #Python"
   );
   const [pinnedComment, setPinnedComment] = useState(
     "🔗 GitHub repo & local setup script in bio! Comment 'SETUP' for the link."
@@ -285,7 +285,7 @@ export default function UploadPage() {
             <div className="flex items-center justify-between text-xs">
               <span className="text-brand font-semibold flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-brand animate-ping" />
-                Uploading to Supabase Storage & Postgres...
+                Ingesting and optimizing master reel...
               </span>
               <span className="font-mono font-bold text-white">{uploadProgress}%</span>
             </div>

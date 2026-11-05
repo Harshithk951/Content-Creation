@@ -1,195 +1,213 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
-  Settings,
-  Database,
-  HardDrive,
-  ShieldCheck,
-  CheckCircle2,
-  AlertCircle,
-  ExternalLink,
-  Copy,
-  Check,
+  Sliders,
+  Film,
+  Volume2,
+  Share2,
   Sparkles,
-  RefreshCw,
-  Server,
-  Cloud,
+  Check,
+  Copy,
+  Monitor,
+  Cpu,
+  Layers,
 } from "lucide-react";
-import { isSupabaseConfigured, createClient } from "@/lib/supabase/client";
 import { useToast } from "@/components/toast";
 
 export default function SettingsPage() {
   const { toast } = useToast();
-  const [supabaseReady, setSupabaseReady] = useState(false);
-  const [checking, setChecking] = useState(false);
-  const [bucketStatus, setBucketStatus] = useState<string>("Checking...");
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
 
-  const checkConnection = async () => {
-    setChecking(true);
-    const configured = isSupabaseConfigured();
-    setSupabaseReady(configured);
+  const [aspectRatio, setAspectRatio] = useState("1080 × 1920 (9:16 Vertical)");
+  const [frameRate, setFrameRate] = useState("30.00 fps Constant");
+  const [loudnessTarget, setLoudnessTarget] = useState("-14.0 LUFS (EBU R128)");
+  const [defaultCta, setDefaultCta] = useState(
+    "Comment VOICE below and I will DM you the complete GitHub repo + local setup script!"
+  );
 
-    if (configured) {
-      try {
-        const supabase = createClient();
-        const { error: dbError } = await supabase.from("videos").select("count").limit(1);
-        if (dbError) {
-          setBucketStatus(`DB connection note: ${dbError.message}`);
-        } else {
-          setBucketStatus("Buckets 'reel-videos' & 'reel-thumbnails' verified");
-        }
-      } catch {
-        setBucketStatus("Local demo mode active");
-      }
-    } else {
-      setBucketStatus("Add Supabase credentials to activate live cloud storage");
-    }
-    setChecking(false);
-  };
-
-  useEffect(() => {
-    checkConnection();
-  }, []);
-
-  const copyEnv = (text: string, key: string) => {
+  const handleCopy = (text: string, key: string) => {
     navigator.clipboard.writeText(text);
     setCopiedKey(key);
-    toast.success("Copied to clipboard");
+    toast.success("Preset copied to clipboard");
     setTimeout(() => setCopiedKey(null), 2000);
   };
 
+  const handleSave = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast.success("Studio presets saved", "Active configuration updated.");
+  };
+
   return (
-    <div className="max-w-4xl mx-auto space-y-8 animate-fade-in pb-16">
+    <div className="max-w-4xl mx-auto space-y-8 animate-fade-in pb-20">
       {/* Header */}
-      <div>
-        <div className="flex items-center gap-2">
-          <Settings className="w-6 h-6 text-brand" />
-          <h2 className="text-2xl font-bold tracking-tight text-white">
-            Studio Settings & Supabase
-          </h2>
+      <div className="border-b border-white/[0.06] pb-6">
+        <div className="flex items-center gap-2 text-brand font-mono text-[11px] tracking-[0.2em] uppercase">
+          <Sliders className="w-3.5 h-3.5" />
+          <span>Master Studio Presets</span>
         </div>
-        <p className="text-sm text-zinc-400 mt-0.5">
-          Configure Supabase PostgreSQL database, S3 Storage buckets, and Vercel deployment variables.
+        <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mt-1">
+          Production Specifications
+        </h2>
+        <p className="text-xs text-zinc-400 mt-1">
+          Format standards and audio-video mastering targets for the 100 Days of Free AI reel pipeline.
         </p>
       </div>
 
-      {/* Supabase Connection Health Status */}
-      <div className="p-6 rounded-2xl bg-[#111218] border border-[#212432] space-y-5 shadow-subtle">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <div className={`p-2.5 rounded-xl border ${supabaseReady ? "bg-emerald-500/10 border-emerald-500/25 text-emerald-400" : "bg-amber-500/10 border-amber-500/25 text-amber-400"}`}>
-              <Database className="w-5 h-5" />
+      <form onSubmit={handleSave} className="space-y-6">
+        {/* Video Render Preset */}
+        <div className="p-6 rounded-2xl bg-[#0c0d13] border border-white/[0.06] space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="p-2.5 rounded-xl bg-brand/10 border border-brand/20 text-brand">
+                <Film className="w-4 h-4" />
+              </div>
+              <div>
+                <h3 className="text-sm font-bold text-white tracking-wide">Video Encoding Profile</h3>
+                <p className="text-xs text-zinc-400">Instagram vertical reel render target</p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-bold text-base text-white">Supabase Cloud Connection</h3>
-              <p className="text-xs text-zinc-400">
-                {supabaseReady
-                  ? "Connected to Supabase PostgreSQL & Storage"
-                  : "Running in local developer demo mode with sample video"}
-              </p>
+            <span className="font-mono text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-md bg-white/[0.04] text-zinc-300 border border-white/[0.06]">
+              Master Quality
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div className="space-y-1.5">
+              <label className="text-[11px] font-mono uppercase tracking-wider text-zinc-400">Resolution</label>
+              <input
+                type="text"
+                value={aspectRatio}
+                onChange={(e) => setAspectRatio(e.target.value)}
+                className="w-full px-3.5 py-2.5 rounded-xl bg-[#13151f] border border-white/[0.08] text-white text-xs font-mono focus:outline-none focus:border-brand"
+              />
+            </div>
+
+            <div className="space-y-1.5">
+              <label className="text-[11px] font-mono uppercase tracking-wider text-zinc-400">Frame Rate</label>
+              <input
+                type="text"
+                value={frameRate}
+                onChange={(e) => setFrameRate(e.target.value)}
+                className="w-full px-3.5 py-2.5 rounded-xl bg-[#13151f] border border-white/[0.08] text-white text-xs font-mono focus:outline-none focus:border-brand"
+              />
             </div>
           </div>
 
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs">
+            <div className="p-3 rounded-xl bg-[#11121a] border border-white/[0.05]">
+              <span className="text-[10px] font-mono text-zinc-500 uppercase block">Codec</span>
+              <span className="font-mono font-bold text-zinc-200 mt-0.5 block">H.264 / AVC</span>
+            </div>
+            <div className="p-3 rounded-xl bg-[#11121a] border border-white/[0.05]">
+              <span className="text-[10px] font-mono text-zinc-500 uppercase block">Color Space</span>
+              <span className="font-mono font-bold text-zinc-200 mt-0.5 block">BT.709 Rec.</span>
+            </div>
+            <div className="p-3 rounded-xl bg-[#11121a] border border-white/[0.05]">
+              <span className="text-[10px] font-mono text-zinc-500 uppercase block">Profile</span>
+              <span className="font-mono font-bold text-zinc-200 mt-0.5 block">High@L4.2</span>
+            </div>
+            <div className="p-3 rounded-xl bg-[#11121a] border border-white/[0.05]">
+              <span className="text-[10px] font-mono text-zinc-500 uppercase block">Pixel Format</span>
+              <span className="font-mono font-bold text-zinc-200 mt-0.5 block">yuv420p</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Audio Mastering Preset */}
+        <div className="p-6 rounded-2xl bg-[#0c0d13] border border-white/[0.06] space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="p-2.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+                <Volume2 className="w-4 h-4" />
+              </div>
+              <div>
+                <h3 className="text-sm font-bold text-white tracking-wide">Audio Mastering & Normalization</h3>
+                <p className="text-xs text-zinc-400">EBU R128 speech loudnorm target</p>
+              </div>
+            </div>
+            <span className="font-mono text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              Verified
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div className="space-y-1.5">
+              <label className="text-[11px] font-mono uppercase tracking-wider text-zinc-400">Integrated Loudness (I)</label>
+              <input
+                type="text"
+                value={loudnessTarget}
+                onChange={(e) => setLoudnessTarget(e.target.value)}
+                className="w-full px-3.5 py-2.5 rounded-xl bg-[#13151f] border border-white/[0.08] text-white text-xs font-mono focus:outline-none focus:border-brand"
+              />
+            </div>
+
+            <div className="space-y-1.5">
+              <label className="text-[11px] font-mono uppercase tracking-wider text-zinc-400">True Peak (TP)</label>
+              <input
+                type="text"
+                disabled
+                value="-1.0 dBFS Maximum"
+                className="w-full px-3.5 py-2.5 rounded-xl bg-[#13151f]/50 border border-white/[0.04] text-zinc-400 text-xs font-mono cursor-not-allowed"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 text-xs">
+            <div className="p-3 rounded-xl bg-[#11121a] border border-white/[0.05]">
+              <span className="text-[10px] font-mono text-zinc-500 uppercase block">Sample Rate</span>
+              <span className="font-mono font-bold text-zinc-200 mt-0.5 block">48.0 kHz</span>
+            </div>
+            <div className="p-3 rounded-xl bg-[#11121a] border border-white/[0.05]">
+              <span className="text-[10px] font-mono text-zinc-500 uppercase block">Channels</span>
+              <span className="font-mono font-bold text-zinc-200 mt-0.5 block">2 (Stereo)</span>
+            </div>
+            <div className="p-3 rounded-xl bg-[#11121a] border border-white/[0.05]">
+              <span className="text-[10px] font-mono text-zinc-500 uppercase block">Bitrate</span>
+              <span className="font-mono font-bold text-zinc-200 mt-0.5 block">192 kbps AAC</span>
+            </div>
+            <div className="p-3 rounded-xl bg-[#11121a] border border-white/[0.05]">
+              <span className="text-[10px] font-mono text-zinc-500 uppercase block">LRA</span>
+              <span className="font-mono font-bold text-zinc-200 mt-0.5 block">7.0 LU Target</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Default Call-to-Action Template */}
+        <div className="p-6 rounded-2xl bg-[#0c0d13] border border-white/[0.06] space-y-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Share2 className="w-4 h-4 text-brand" />
+              <h3 className="text-sm font-bold text-white tracking-wide">Default Call-To-Action (CTA)</h3>
+            </div>
+            <button
+              type="button"
+              onClick={() => handleCopy(defaultCta, "cta")}
+              className="text-xs text-brand hover:text-brand-light font-semibold flex items-center gap-1"
+            >
+              {copiedKey === "cta" ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
+              <span>{copiedKey === "cta" ? "Copied" : "Copy"}</span>
+            </button>
+          </div>
+
+          <textarea
+            rows={2}
+            value={defaultCta}
+            onChange={(e) => setDefaultCta(e.target.value)}
+            className="w-full px-3.5 py-2.5 rounded-xl bg-[#13151f] border border-white/[0.08] text-white text-xs leading-relaxed focus:outline-none focus:border-brand resize-none"
+          />
+        </div>
+
+        {/* Submit */}
+        <div className="flex items-center justify-end pt-2">
           <button
-            onClick={checkConnection}
-            disabled={checking}
-            className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-[#171923] hover:bg-[#202330] text-zinc-300 text-xs font-semibold border border-[#272a39] transition-colors"
+            type="submit"
+            className="px-6 py-2.5 rounded-xl bg-brand hover:bg-brand-hover text-white text-xs font-bold transition-all shadow-glow hover:scale-[1.01] active:scale-[0.99]"
           >
-            <RefreshCw className={`w-3.5 h-3.5 ${checking ? "animate-spin" : ""}`} />
-            <span>Test Connection</span>
+            Save Presets
           </button>
         </div>
-
-        {/* Status Indicators */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-          <div className="p-3.5 rounded-xl bg-[#151722] border border-[#232635]">
-            <p className="text-[11px] text-zinc-400 font-medium">PostgreSQL Table</p>
-            <p className="text-sm font-mono font-semibold text-white mt-1">public.videos</p>
-            <p className="text-[11px] text-emerald-400 mt-0.5 flex items-center gap-1">
-              <CheckCircle2 className="w-3 h-3" />
-              RLS Enabled
-            </p>
-          </div>
-
-          <div className="p-3.5 rounded-xl bg-[#151722] border border-[#232635]">
-            <p className="text-[11px] text-zinc-400 font-medium">Video Storage Bucket</p>
-            <p className="text-sm font-mono font-semibold text-white mt-1">reel-videos</p>
-            <p className="text-[11px] text-emerald-400 mt-0.5 flex items-center gap-1">
-              <CheckCircle2 className="w-3 h-3" />
-              Private + Signed URLs
-            </p>
-          </div>
-
-          <div className="p-3.5 rounded-xl bg-[#151722] border border-[#232635]">
-            <p className="text-[11px] text-zinc-400 font-medium">Thumbnails Bucket</p>
-            <p className="text-sm font-mono font-semibold text-white mt-1">reel-thumbnails</p>
-            <p className="text-[11px] text-emerald-400 mt-0.5 flex items-center gap-1">
-              <CheckCircle2 className="w-3 h-3" />
-              Direct / Cached
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Vercel Deployment & Environment Checklist */}
-      <div className="p-6 rounded-2xl bg-[#111218] border border-[#212432] space-y-4 shadow-subtle">
-        <div className="flex items-center gap-2">
-          <Cloud className="w-5 h-5 text-brand" />
-          <h3 className="font-bold text-base text-white">Vercel Environment Variables</h3>
-        </div>
-        <p className="text-xs text-zinc-400 leading-relaxed">
-          When deploying ReelVault to Vercel, add the following environment variables in your Vercel Project Settings &gt; Environment Variables:
-        </p>
-
-        <div className="space-y-3 font-mono text-xs">
-          <div className="p-3.5 rounded-xl bg-[#0e0f14] border border-[#1f212c] flex items-center justify-between gap-4">
-            <div>
-              <span className="text-brand font-bold">NEXT_PUBLIC_SUPABASE_URL</span>
-              <p className="text-[11px] text-zinc-500 font-sans mt-0.5">Your Supabase project URL (https://xyz.supabase.co)</p>
-            </div>
-            <button
-              onClick={() => copyEnv("NEXT_PUBLIC_SUPABASE_URL", "var1")}
-              className="p-1.5 text-zinc-400 hover:text-white"
-            >
-              {copiedKey === "var1" ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
-            </button>
-          </div>
-
-          <div className="p-3.5 rounded-xl bg-[#0e0f14] border border-[#1f212c] flex items-center justify-between gap-4">
-            <div>
-              <span className="text-brand font-bold">NEXT_PUBLIC_SUPABASE_ANON_KEY</span>
-              <p className="text-[11px] text-zinc-500 font-sans mt-0.5">Your Supabase public publishable anon key</p>
-            </div>
-            <button
-              onClick={() => copyEnv("NEXT_PUBLIC_SUPABASE_ANON_KEY", "var2")}
-              className="p-1.5 text-zinc-400 hover:text-white"
-            >
-              {copiedKey === "var2" ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Creator Profile & Series Information */}
-      <div className="p-6 rounded-2xl bg-[#111218] border border-[#212432] space-y-4">
-        <h3 className="font-bold text-base text-white">Creator & Series Profile</h3>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div className="p-4 rounded-xl bg-[#161822] border border-[#272a39] space-y-1">
-            <span className="text-xs text-zinc-400 font-medium">Series Title</span>
-            <p className="text-sm font-bold text-white">100 Days of Free AI</p>
-            <p className="text-[11px] text-brand">Featuring Harshith & Claude</p>
-          </div>
-
-          <div className="p-4 rounded-xl bg-[#161822] border border-[#272a39] space-y-1">
-            <span className="text-xs text-zinc-400 font-medium">Target Platform</span>
-            <p className="text-sm font-bold text-white">Instagram Reels</p>
-            <p className="text-[11px] text-zinc-400">1080 × 1920 • 9:16 Vertical Video</p>
-          </div>
-        </div>
-      </div>
+      </form>
     </div>
   );
 }

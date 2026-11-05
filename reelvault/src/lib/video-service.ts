@@ -246,9 +246,13 @@ export async function getVideoPlayUrl(storagePath: string): Promise<string> {
 
   if (isSupabaseConfigured()) {
     const supabase = createClient();
+    const cleanPath = storagePath.includes("reel-videos/")
+      ? storagePath.split("reel-videos/")[1]
+      : storagePath;
+
     const { data, error } = await supabase.storage
       .from("reel-videos")
-      .createSignedUrl(storagePath, 3600); // 1 hour token
+      .createSignedUrl(cleanPath, 3600);
 
     if (!error && data?.signedUrl) {
       return data.signedUrl;
@@ -263,23 +267,29 @@ export async function getVideoDownloadUrl(video: VideoRecord): Promise<{ url: st
 
   if (isSupabaseConfigured()) {
     const supabase = createClient();
-    const { data, error } = await supabase.storage
-      .from("reel-videos")
-      .createSignedUrl(video.storage_path, 3600, {
-        download: filename,
-      });
+    const cleanPath = video.storage_path.includes("reel-videos/")
+      ? video.storage_path.split("reel-videos/")[1]
+      : video.storage_path;
 
-    if (!error && data?.signedUrl) {
-      return { url: data.signedUrl, filename };
+    if (!cleanPath.startsWith("http")) {
+      const { data, error } = await supabase.storage
+        .from("reel-videos")
+        .createSignedUrl(cleanPath, 3600, {
+          download: filename,
+        });
+
+      if (!error && data?.signedUrl) {
+        return { url: data.signedUrl, filename };
+      }
     }
   }
 
-  // Fallback for sample file
-  if (video.storage_path === "sample-ep01.mp4" || !video.storage_path.includes("/")) {
-    return { url: "/sample-ep01.mp4", filename };
+  // Fallback for sample file or direct public storage URL
+  if (video.storage_path.startsWith("http://") || video.storage_path.startsWith("https://")) {
+    return { url: video.storage_path, filename };
   }
 
-  return { url: video.storage_path, filename };
+  return { url: "/sample-ep01.mp4", filename };
 }
 
 export async function uploadVideoFile(

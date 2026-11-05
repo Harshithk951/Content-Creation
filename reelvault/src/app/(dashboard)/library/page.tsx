@@ -4,7 +4,6 @@ import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import {
   Search,
-  Filter,
   ArrowUpDown,
   UploadCloud,
   Film,
@@ -61,63 +60,64 @@ export default function LibraryPage() {
   const isFiltered = Boolean(searchQuery || statusFilter !== "All");
 
   return (
-    <div className="space-y-6 animate-fade-in">
+    <div className="space-y-6 animate-fade-in pb-16">
       {/* Top Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.06] pb-5">
         <div>
-          <h2 className="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
-            <Film className="w-6 h-6 text-brand" />
-            Video Library
+          <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.25em] text-brand uppercase font-bold">
+            <Film className="w-3.5 h-3.5" />
+            <span>Archive Index</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mt-1">
+            Master Reel Library
           </h2>
-          <p className="text-sm text-zinc-400 mt-0.5">
-            All stored 9:16 vertical Reel episodes for 100 Days of Free AI.
+          <p className="text-xs text-zinc-400 mt-1">
+            Completed 9:16 vertical video masters for 100 Days of Free AI.
           </p>
         </div>
 
         <div className="flex items-center gap-3">
           <button
             onClick={() => loadVideos()}
-            className="p-2.5 rounded-xl bg-[#14161f] hover:bg-[#1d202c] text-zinc-400 hover:text-white border border-[#232635] transition-colors"
-            title="Refresh videos"
+            className="p-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] text-zinc-400 hover:text-white border border-white/[0.08] transition-colors"
+            title="Refresh"
           >
-            <RefreshCw className={`w-4 h-4 ${loading ? "animate-spin" : ""}`} />
+            <RefreshCw className={`w-3.5 h-3.5 ${loading ? "animate-spin" : ""}`} />
           </button>
 
           <Link
             href="/upload"
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand hover:bg-brand-hover text-white text-sm font-semibold transition-all shadow-glow"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-bold transition-all hover:scale-[1.02] active:scale-[0.98]"
           >
-            <UploadCloud className="w-4 h-4" />
-            <span>Upload Video</span>
+            <UploadCloud className="w-3.5 h-3.5" />
+            <span>Ingest Reel</span>
           </Link>
         </div>
       </div>
 
-      {/* Search, Filter, Sort Toolbar */}
-      <div className="p-4 rounded-2xl bg-[#111218] border border-[#20232f] flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 shadow-subtle">
-        {/* Search Input */}
+      {/* Filter and Search Bar */}
+      <div className="p-3 rounded-2xl bg-[#090a0f] border border-white/[0.06] flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 shadow-subtle">
         <div className="relative flex-1">
-          <Search className="w-4 h-4 text-zinc-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
+          <Search className="w-3.5 h-3.5 text-zinc-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            placeholder="Search by title, episode number, topic, caption..."
+            placeholder="Search by title, episode number, topic, or caption..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 rounded-xl bg-[#171922] border border-[#282b3a] text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-brand transition-colors"
-          >
-          </input>
+            className="w-full pl-9 pr-4 py-2 rounded-xl bg-[#11131c] border border-white/[0.06] text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-brand transition-colors font-mono"
+          />
         </div>
 
-        <div className="flex items-center gap-2.5 flex-wrap sm:flex-nowrap">
-          {/* Status Filter Tabs */}
-          <div className="flex items-center p-1 rounded-xl bg-[#171922] border border-[#282b3a] text-xs">
+        <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap">
+          {/* Status Tabs */}
+          <div className="flex items-center p-1 rounded-xl bg-[#11131c] border border-white/[0.06] text-xs font-mono">
             {(["All", "Ready", "Published", "Draft"] as const).map((st) => (
               <button
                 key={st}
                 onClick={() => setStatusFilter(st)}
-                className={`px-3 py-1.5 rounded-lg font-medium transition-colors ${
+                className={`px-3 py-1.5 rounded-lg text-[11px] font-semibold transition-colors ${
                   statusFilter === st
-                    ? "bg-brand text-white font-semibold shadow-subtle"
+                    ? "bg-brand text-white shadow-subtle"
                     : "text-zinc-400 hover:text-zinc-200"
                 }`}
               >
@@ -127,18 +127,18 @@ export default function LibraryPage() {
           </div>
 
           {/* Sort Selector */}
-          <div className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#171922] border border-[#282b3a] text-xs text-zinc-300">
+          <div className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#11131c] border border-white/[0.06] text-xs font-mono text-zinc-300">
             <ArrowUpDown className="w-3.5 h-3.5 text-zinc-400" />
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as any)}
-              className="bg-transparent text-xs text-white focus:outline-none cursor-pointer"
+              className="bg-transparent text-[11px] text-white focus:outline-none cursor-pointer"
             >
-              <option value="newest" className="bg-[#171922] text-white">Newest First</option>
-              <option value="oldest" className="bg-[#171922] text-white">Oldest First</option>
-              <option value="episode-asc" className="bg-[#171922] text-white">Episode (1 → 100)</option>
-              <option value="episode-desc" className="bg-[#171922] text-white">Episode (100 → 1)</option>
-              <option value="title" className="bg-[#171922] text-white">Title (A → Z)</option>
+              <option value="newest" className="bg-[#11131c] text-white">Newest First</option>
+              <option value="oldest" className="bg-[#11131c] text-white">Oldest First</option>
+              <option value="episode-asc" className="bg-[#11131c] text-white">Day 1 → 100</option>
+              <option value="episode-desc" className="bg-[#11131c] text-white">Day 100 → 1</option>
+              <option value="title" className="bg-[#11131c] text-white">Title A → Z</option>
             </select>
           </div>
         </div>
@@ -146,18 +146,18 @@ export default function LibraryPage() {
 
       {/* Video Cards Grid */}
       {loading ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {[1, 2, 3, 4, 5, 6].map((n) => (
             <div
               key={n}
-              className="h-96 rounded-2xl bg-[#121319] border border-[#21242f] animate-pulse"
+              className="h-96 rounded-2xl bg-white/[0.02] border border-white/[0.05] animate-pulse"
             />
           ))}
         </div>
       ) : videos.length === 0 ? (
         <EmptyState isFiltered={isFiltered} onResetFilters={handleResetFilters} />
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {videos.map((video) => (
             <VideoCard
               key={video.id}
