@@ -26,6 +26,8 @@ References*/
 RawFootage/
 Exports/
 hyperframes-test/
+test_outputs/
+audio_day*/
 reel-studio/public/*.wav
 
 # Environment & credentials

@@ -3,6 +3,7 @@ import { Composition } from "remotion";
 import { CampfireScene } from "./Series/CampfireScene";
 import { StudioScene } from "./Series/StudioScene";
 import { WhiteboardScene } from "./Series/WhiteboardScene";
+import { WhiteboardSceneDay2 } from "./Series/WhiteboardSceneDay2";
 import { DialogueLine } from "./Series/types";
 
 // Episode 1: ELI5 AI Voice Stack (ElevenLabs Voices: Liam + George)
@@ -95,6 +96,74 @@ const episode1Eli5Lines: DialogueLine[] = [
   },
 ];
 
+// Episode 2: Midjourney vs Flux.1 Schnell (38s / 1140 frames)
+const episode2Lines: DialogueLine[] = [
+  {
+    speaker: "boy",
+    text: "Claude, I need Midjourney for thumbnails.",
+    emotion: "annoyed",
+    camera: "BOY_FOCUS",
+    startFrame: 0,
+    durationFrames: 90,
+  },
+  {
+    speaker: "claude",
+    text: "No you don't. You need Flux.",
+    emotion: "smug",
+    camera: "CLAUDE_FOCUS",
+    startFrame: 90,
+    durationFrames: 90,
+  },
+  {
+    speaker: "boy",
+    text: "Flux? That free thing? It looks cheap.",
+    emotion: "surprised",
+    camera: "BOY_FOCUS",
+    startFrame: 180,
+    durationFrames: 120,
+  },
+  {
+    speaker: "claude",
+    text: "Flux.1 Schnell. Open-source. Same quality. Zero dollars.",
+    emotion: "neutral",
+    camera: "CLAUDE_FOCUS",
+    startFrame: 300,
+    durationFrames: 180,
+  },
+  {
+    speaker: "boy",
+    text: "But Midjourney has better styles.",
+    emotion: "annoyed",
+    camera: "BOY_FOCUS",
+    startFrame: 480,
+    durationFrames: 150,
+  },
+  {
+    speaker: "claude",
+    text: "Flux does photoreal, anime, 3D, text in image. In your browser.",
+    emotion: "excited",
+    camera: "CLAUDE_FOCUS",
+    startFrame: 630,
+    durationFrames: 180,
+  },
+  {
+    speaker: "boy",
+    text: "So I just cancelled Midjourney?",
+    emotion: "excited",
+    camera: "BOY_FOCUS",
+    startFrame: 810,
+    durationFrames: 150,
+  },
+  {
+    speaker: "claude",
+    text: "You just saved $120 a year. Comment FREE for setup.",
+    emotion: "smug",
+    camera: "PUNCHLINE_SNAP",
+    startFrame: 960,
+    durationFrames: 180,
+  },
+];
+
 export const RemotionRoot: React.FC = () => {
   return (
     <>
@@ -128,7 +197,7 @@ export const RemotionRoot: React.FC = () => {
         }}
       />
 
-      {/* Setting C: 100 Days of Free AI Whiteboard Explainer with Talking Speaker Circle */}
+      {/* Setting C: 100 Days of Free AI Whiteboard Explainer Day 01 */}
       <Composition
         id="WhiteboardEpisode1"
         component={WhiteboardScene}
@@ -140,6 +209,21 @@ export const RemotionRoot: React.FC = () => {
           lines: episode1Eli5Lines,
           audioSrc: "episode1_master.wav",
           seriesTitle: "100 DAYS OF FREE AI • DAY 01 / 100",
+        }}
+      />
+
+      {/* Setting D: 100 Days of Free AI Whiteboard Explainer Day 02 */}
+      <Composition
+        id="WhiteboardEpisode2"
+        component={WhiteboardSceneDay2}
+        durationInFrames={1140}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          lines: episode2Lines,
+          audioSrc: "episode2_master.wav",
+          seriesTitle: "100 DAYS OF FREE AI • DAY 02 / 100",
         }}
       />
     </>

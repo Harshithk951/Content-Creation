@@ -39,6 +39,8 @@ export interface SeriesEpisodePlan {
   title: string;
   planned_topic?: string;
   tool_name?: string;
+  category?: string;
+  phase?: string;
   status: "Planned" | "Scripting" | "Video Ready" | "Published";
   target_date?: string | null;
   notes?: string | null;

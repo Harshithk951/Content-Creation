@@ -29,121 +29,57 @@ const SAMPLE_LOCAL_EPISODE_1: VideoRecord = {
   updated_at: new Date().toISOString(),
 };
 
-// Initial planned episodes roadmap for 100 Days of Free AI
-export const INITIAL_SERIES_ROADMAP: SeriesEpisodePlan[] = [
-  {
-    episode_number: 1,
-    title: "Kokoro 82M — The $50 Voiceover Trap",
-    planned_topic: "Local, open-weight TTS on CPU without GPU or subscriptions",
-    tool_name: "Kokoro-82M",
-    status: "Video Ready",
-    target_date: "2026-11-05",
-    notes: "Verified Apache-2.0, ONNX runtime, MacBook Pro benchmark.",
-  },
-  {
-    episode_number: 2,
-    title: "Whisper.cpp — Free Infinite Captions",
-    planned_topic: "C/C++ port of OpenAI Whisper with zero cloud cost & metal acceleration",
-    tool_name: "whisper.cpp",
-    status: "Scripting",
-    target_date: "2026-11-06",
-    notes: "Word-level transcription for vertical reels.",
-  },
-  {
-    episode_number: 3,
-    title: "Ollama + DeepSeek R1 — Local Reasoning Agent",
-    planned_topic: "Running distilled reasoning models 100% private on consumer silicon",
-    tool_name: "Ollama / DeepSeek-R1",
-    status: "Planned",
-    target_date: "2026-11-07",
-    notes: "Chain-of-thought demonstration in the terminal.",
-  },
-  {
-    episode_number: 4,
-    title: "ComfyUI + FLUX Schnell — High-End Image Studio",
-    planned_topic: "4-step photorealistic image generation for free",
-    tool_name: "FLUX.1-schnell",
-    status: "Planned",
-    target_date: "2026-11-08",
-    notes: "Direct node setup vs Midjourney $30/mo.",
-  },
-  {
-    episode_number: 5,
-    title: "Remotion — Code-Driven Video Generation",
-    planned_topic: "Programmatic React video rendering for reels and shorts",
-    tool_name: "Remotion",
-    status: "Planned",
-    target_date: "2026-11-09",
-    notes: "Auto-caption shaders & keyframe physics.",
-  },
-  {
-    episode_number: 6,
-    title: "Supabase Local Dev Stack",
-    planned_topic: "Spinning up Postgres, Auth, and S3 Storage in 1 docker command",
-    tool_name: "Supabase CLI",
-    status: "Planned",
-    target_date: "2026-11-10",
-  },
-  {
-    episode_number: 7,
-    title: "Crawlee + Camoufox — Stealth Web Scraping for AI",
-    planned_topic: "Collect real-time data for your LLMs without Cloudflare blocks",
-    tool_name: "Crawlee",
-    status: "Planned",
-    target_date: "2026-11-11",
-  },
-  {
-    episode_number: 8,
-    title: "vLLM — Production High-Throughput Inference",
-    planned_topic: "PagedAttention engine that makes your local API 10x faster",
-    tool_name: "vLLM",
-    status: "Planned",
-    target_date: "2026-11-12",
-  },
-  {
-    episode_number: 9,
-    title: "LlamaIndex Workflows — Event-Driven Agents",
-    planned_topic: "Async state machines without vendor lock-in",
-    tool_name: "LlamaIndex",
-    status: "Planned",
-    target_date: "2026-11-13",
-  },
-  {
-    episode_number: 10,
-    title: "FFmpeg Automation for Video Creators",
-    planned_topic: "10 one-liner bash scripts that replace Adobe Premiere",
-    tool_name: "ffmpeg",
-    status: "Planned",
-    target_date: "2026-11-14",
-  },
-];
+const SAMPLE_LOCAL_EPISODE_2: VideoRecord = {
+  id: "ep-02-local-flux",
+  user_id: "demo-harshith-id",
+  title: "Midjourney vs Flux.1 Schnell — $120/yr Saved",
+  episode_number: 2,
+  series_name: "100 Days of Free AI",
+  description: "Stop paying $120/year for Midjourney thumbnails. Flux.1 Schnell is an open-source 12B parameter image model that runs in your browser for $0.",
+  storage_path: "sample-ep02.mp4",
+  thumbnail_path: null,
+  file_name: "100DaysOfFreeAI_Day02_MidjourneyVsFlux.mp4",
+  file_size: 6185210,
+  duration_seconds: 38.0,
+  resolution: "1080 × 1920",
+  mime_type: "video/mp4",
+  caption: "DAY 02 / 100 - Stop paying for Midjourney.\n\nMidjourney = $10/month = $120/year\nFlux.1 Schnell = $0. Open-source. Same quality.\n\nPhotoreal, anime, 3D, and it actually writes text correctly in images.\nComment FREE and I'll send you the exact setup link.\n\nSave this for your next thumbnail.",
+  hashtags: "#100daysoffreeai #midjourney #flux #opensource #aitools #freedevtools #studentdeveloper #thumbnaildesign",
+  pinned_comment: "Setup: Go to Hugging Face > Search 'Flux.1 Schnell' > Type prompt > Download. No install needed. Want the direct link? Comment FREE",
+  cta: "Comment FREE below for the instant direct setup guide!",
+  topic_keywords: ["Flux.1 Schnell", "Midjourney", "Open Source AI", "Thumbnails", "Harshith and Claude"],
+  status: "Ready",
+  scheduled_at: null,
+  published_at: null,
+  created_at: new Date().toISOString(),
+  updated_at: new Date().toISOString(),
+};
 
-// Fill the rest up to 100 days
-for (let i = 11; i <= 100; i++) {
-  INITIAL_SERIES_ROADMAP.push({
-    episode_number: i,
-    title: `Episode ${i.toString().padStart(2, "0")} — Free AI Tool Deep Dive`,
-    planned_topic: `Curated open-source tool & practical workflow #${i}`,
-    tool_name: `Open AI Stack #${i}`,
-    status: "Planned",
-    target_date: null,
-  });
-}
+const DEFAULT_LOCAL_VIDEOS = [SAMPLE_LOCAL_EPISODE_2, SAMPLE_LOCAL_EPISODE_1];
+
+// Re-export full 100-day series roadmap
+export { INITIAL_SERIES_ROADMAP } from "./series-roadmap";
 
 // Local storage cache key for client testing mode
 const LOCAL_STORAGE_VIDEOS_KEY = "reelvault_local_videos_cache";
 
 function getLocalStoredVideos(): VideoRecord[] {
-  if (typeof window === "undefined") return [SAMPLE_LOCAL_EPISODE_1];
+  if (typeof window === "undefined") return DEFAULT_LOCAL_VIDEOS;
   try {
     const raw = localStorage.getItem(LOCAL_STORAGE_VIDEOS_KEY);
     if (!raw) {
-      localStorage.setItem(LOCAL_STORAGE_VIDEOS_KEY, JSON.stringify([SAMPLE_LOCAL_EPISODE_1]));
-      return [SAMPLE_LOCAL_EPISODE_1];
+      localStorage.setItem(LOCAL_STORAGE_VIDEOS_KEY, JSON.stringify(DEFAULT_LOCAL_VIDEOS));
+      return DEFAULT_LOCAL_VIDEOS;
     }
-    return JSON.parse(raw);
+    const parsed = JSON.parse(raw);
+    if (!parsed.some((v: VideoRecord) => v.episode_number === 2)) {
+      const merged = [SAMPLE_LOCAL_EPISODE_2, ...parsed];
+      localStorage.setItem(LOCAL_STORAGE_VIDEOS_KEY, JSON.stringify(merged));
+      return merged;
+    }
+    return parsed;
   } catch {
-    return [SAMPLE_LOCAL_EPISODE_1];
+    return DEFAULT_LOCAL_VIDEOS;
   }
 }
 
@@ -244,6 +180,10 @@ export async function getVideoPlayUrl(storagePath: string): Promise<string> {
     return "/sample-ep01.mp4";
   }
 
+  if (storagePath === "sample-ep02.mp4" || storagePath.includes("Flux") || storagePath.includes("Day02")) {
+    return "/sample-ep02.mp4";
+  }
+
   if (isSupabaseConfigured()) {
     const supabase = createClient();
     const cleanPath = storagePath.includes("reel-videos/")
@@ -259,7 +199,7 @@ export async function getVideoPlayUrl(storagePath: string): Promise<string> {
     }
   }
 
-  return `/sample-ep01.mp4`;
+  return `/${storagePath}`;
 }
 
 export async function getVideoDownloadUrl(video: VideoRecord): Promise<{ url: string; filename: string }> {
@@ -287,6 +227,10 @@ export async function getVideoDownloadUrl(video: VideoRecord): Promise<{ url: st
   // Fallback for sample file or direct public storage URL
   if (video.storage_path.startsWith("http://") || video.storage_path.startsWith("https://")) {
     return { url: video.storage_path, filename };
+  }
+
+  if (video.storage_path.includes("ep02") || video.episode_number === 2) {
+    return { url: "/sample-ep02.mp4", filename };
   }
 
   return { url: "/sample-ep01.mp4", filename };
