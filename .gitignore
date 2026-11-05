@@ -20,10 +20,13 @@ gbro-collage-broll/
 onetake/
 lemo-opuscar/
 
-# Raw video footage & external reference downloads
+# Raw video footage, test runs & reference downloads
 References/
 References*/
 RawFootage/
+Exports/
+hyperframes-test/
+reel-studio/public/*.wav
 
 # Environment & credentials
 .env
