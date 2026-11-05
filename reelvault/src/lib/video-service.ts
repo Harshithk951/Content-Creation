@@ -19,7 +19,7 @@ const SAMPLE_LOCAL_EPISODE_1: VideoRecord = {
   mime_type: "video/mp4",
   caption: "Stop paying $40 a month for voiceover credits when you have 12 cents in your account. Kokoro 82M is an 82 million parameter open-weight TTS model that runs 100% locally on your laptop CPU in 2 seconds. Zero API keys. Zero subscriptions. Fully Apache-2.0 licensed.",
   hashtags: "#100DaysOfFreeAI #AI #OpenSource #Kokoro #DeveloperTools #TechReels #CodingLife #Nextjs #FreeAI",
-  pinned_comment: "🔗 GitHub repo & local setup script in bio! Comment 'VOICE' and Claude will DM you the one-click script.",
+  pinned_comment: "GitHub repository and local setup instructions in bio. Comment 'VOICE' and Claude will DM you the one-click script.",
   cta: "Comment 'VOICE' below to get the one-click local setup script!",
   topic_keywords: ["Kokoro 82M", "Text-to-Speech", "ONNX", "Local AI", "Harshith and Claude"],
   status: "Ready",
@@ -110,7 +110,7 @@ export const INITIAL_SERIES_ROADMAP: SeriesEpisodePlan[] = [
   },
   {
     episode_number: 10,
-    title: "FFmpeg Magic for Creators",
+    title: "FFmpeg Automation for Video Creators",
     planned_topic: "10 one-liner bash scripts that replace Adobe Premiere",
     tool_name: "ffmpeg",
     status: "Planned",

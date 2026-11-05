@@ -16,7 +16,7 @@ import {
   Check,
 } from "lucide-react";
 import { VideoRecord, VideoStats } from "@/types/video";
-import { fetchVideos, fetchVideoStats, getVideoDownloadUrl } from "@/lib/video-service";
+import { fetchVideos, fetchVideoStats, getVideoDownloadUrl, getVideoPlayUrl } from "@/lib/video-service";
 import { StatsCards } from "@/components/stats-cards";
 import { VideoCard } from "@/components/video-card";
 import { VideoPreviewModal } from "@/components/video-preview-modal";
@@ -31,6 +31,7 @@ export default function OverviewPage() {
   const [stats, setStats] = useState<VideoStats | null>(null);
   const [loading, setLoading] = useState(true);
   const [copied, setCopied] = useState(false);
+  const [featuredVideoSrc, setFeaturedVideoSrc] = useState<string>("");
 
   // Modals state
   const [previewVideo, setPreviewVideo] = useState<VideoRecord | null>(null);
@@ -46,6 +47,11 @@ export default function OverviewPage() {
       ]);
       setVideos(vList);
       setStats(vStats);
+
+      const f = vList.find((v) => v.episode_number === 1) || vList[0];
+      if (f) {
+        getVideoPlayUrl(f.storage_path).then(setFeaturedVideoSrc).catch(() => {});
+      }
     } catch (err) {
       console.error("Failed to load dashboard data", err);
     } finally {
@@ -95,40 +101,40 @@ export default function OverviewPage() {
             {/* Left Column: Metadata & Actions */}
             <div className="space-y-4 max-w-2xl flex-1">
               <div className="flex items-center gap-2">
-                <span className="font-mono text-[10px] tracking-[0.25em] text-brand uppercase font-bold">
-                  EPISODE 01 MASTER
+                <span className="font-mono text-[10px] tracking-[0.2em] text-brand uppercase font-medium">
+                  Episode 01 Master
                 </span>
                 <span className="text-zinc-600">•</span>
-                <span className="font-mono text-[10px] tracking-[0.15em] text-emerald-400 uppercase font-semibold">
-                  STATUS: READY FOR POSTING
+                <span className="font-mono text-[10px] tracking-[0.16em] text-emerald-400 uppercase font-medium">
+                  Status: Ready for Posting
                 </span>
               </div>
 
-              <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+              <h2 className="text-2xl sm:text-3xl font-semibold tracking-[-0.03em] text-white leading-tight">
                 {featured.title}
               </h2>
 
-              <p className="text-sm text-zinc-400 leading-relaxed max-w-xl">
+              <p className="text-sm text-zinc-400 leading-relaxed max-w-xl font-normal">
                 {featured.description || "The 82M open-weight text-to-speech model running 100% locally on CPU without subscriptions or cloud fees."}
               </p>
 
               {/* Technical Telemetry Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2 text-xs font-mono">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2 text-xs font-mono tabular-nums">
                 <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                  <span className="text-[10px] text-zinc-500 uppercase block">Duration</span>
-                  <span className="font-bold text-white mt-0.5 block">38.67s</span>
+                  <span className="text-[10px] text-zinc-500 uppercase tracking-wider block">Duration</span>
+                  <span className="font-medium text-white mt-0.5 block">38.67s</span>
                 </div>
                 <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                  <span className="text-[10px] text-zinc-500 uppercase block">Resolution</span>
-                  <span className="font-bold text-white mt-0.5 block">1080×1920</span>
+                  <span className="text-[10px] text-zinc-500 uppercase tracking-wider block">Resolution</span>
+                  <span className="font-medium text-white mt-0.5 block">1080×1920</span>
                 </div>
                 <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                  <span className="text-[10px] text-zinc-500 uppercase block">Loudness</span>
-                  <span className="font-bold text-emerald-400 mt-0.5 block">-14.0 LUFS</span>
+                  <span className="text-[10px] text-zinc-500 uppercase tracking-wider block">Loudness</span>
+                  <span className="font-medium text-emerald-400 mt-0.5 block">-14.0 LUFS</span>
                 </div>
                 <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                  <span className="text-[10px] text-zinc-500 uppercase block">File Size</span>
-                  <span className="font-bold text-white mt-0.5 block">6.49 MB</span>
+                  <span className="text-[10px] text-zinc-500 uppercase tracking-wider block">File Size</span>
+                  <span className="font-medium text-white mt-0.5 block">6.49 MB</span>
                 </div>
               </div>
 
@@ -136,7 +142,7 @@ export default function OverviewPage() {
               <div className="flex items-center gap-3 pt-3 flex-wrap">
                 <button
                   onClick={() => setPreviewVideo(featured)}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-bold transition-all hover:scale-[1.02] active:scale-[0.98]"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-medium transition-colors"
                 >
                   <Play className="w-3.5 h-3.5 fill-black" />
                   <span>Preview 9:16 Reel</span>
@@ -144,7 +150,7 @@ export default function OverviewPage() {
 
                 <button
                   onClick={handleDownload}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-white text-xs font-bold border border-white/[0.1] transition-colors"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-white text-xs font-medium border border-white/[0.08] transition-colors"
                 >
                   <Download className="w-3.5 h-3.5 text-brand" />
                   <span>Download Master MP4</span>
@@ -152,7 +158,7 @@ export default function OverviewPage() {
 
                 <button
                   onClick={handleCopyCaption}
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.02] hover:bg-white/[0.06] text-zinc-300 text-xs font-semibold border border-white/[0.06] transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.02] hover:bg-white/[0.06] text-zinc-300 text-xs font-medium border border-white/[0.06] transition-colors"
                 >
                   {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5 text-zinc-400" />}
                   <span>{copied ? "Caption Copied" : "Copy Caption"}</span>
@@ -163,27 +169,33 @@ export default function OverviewPage() {
             {/* Right Column: 9:16 Mini Theatre Card */}
             <div
               onClick={() => setPreviewVideo(featured)}
-              className="w-full lg:w-64 aspect-[9/16] rounded-2xl bg-black border border-white/[0.1] overflow-hidden cursor-pointer relative group/preview shrink-0 shadow-2xl"
+              className="w-full lg:w-64 aspect-[9/16] rounded-2xl bg-black border border-white/[0.08] overflow-hidden cursor-pointer relative group/preview shrink-0 shadow-2xl"
             >
-              <video
-                src="/sample-ep01.mp4"
-                preload="metadata"
-                muted
-                loop
-                playsInline
-                className="w-full h-full object-cover group-hover/preview:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40" />
+              {featuredVideoSrc ? (
+                <video
+                  src={featuredVideoSrc}
+                  preload="metadata"
+                  muted
+                  loop
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="w-full h-full bg-[#0d0e14] flex items-center justify-center text-zinc-600 font-mono text-xs">
+                  1080 × 1920
+                </div>
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40 pointer-events-none" />
 
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-12 h-12 rounded-full bg-white/90 text-black flex items-center justify-center shadow-glow group-hover/preview:scale-110 transition-transform">
+                <div className="w-12 h-12 rounded-full bg-white/90 text-black flex items-center justify-center shadow-lg transition-transform group-hover/preview:scale-105">
                   <Play className="w-5 h-5 translate-x-0.5 fill-black" />
                 </div>
               </div>
 
-              <div className="absolute bottom-3 inset-x-3 flex items-center justify-between text-[10px] font-mono text-zinc-300">
-                <span className="px-2 py-0.5 rounded bg-black/80 backdrop-blur-md">00:00:38:20</span>
-                <span className="px-2 py-0.5 rounded bg-brand/90 text-white font-bold">DAY 01</span>
+              <div className="absolute bottom-3 inset-x-3 flex items-center justify-between text-[10px] font-mono tabular-nums text-zinc-300">
+                <span className="px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border border-white/[0.08]">00:00:38:20</span>
+                <span className="px-2 py-0.5 rounded bg-white text-black font-semibold">DAY 01</span>
               </div>
             </div>
           </div>
@@ -194,17 +206,17 @@ export default function OverviewPage() {
       <div className="space-y-4">
         <div className="flex items-center justify-between border-b border-white/[0.06] pb-3">
           <div className="flex items-center gap-2 font-mono text-xs">
-            <span className="text-white font-bold uppercase tracking-wider">Master Library</span>
+            <span className="text-white font-medium uppercase tracking-wider">Master Library</span>
             <span className="text-zinc-600">/</span>
             <span className="text-zinc-500">100 Days of Free AI</span>
           </div>
 
           <Link
             href="/library"
-            className="flex items-center gap-1.5 text-xs text-brand hover:text-brand-light font-mono uppercase tracking-wider font-semibold group"
+            className="flex items-center gap-1.5 text-xs text-zinc-400 hover:text-white font-mono uppercase tracking-wider font-medium group transition-colors"
           >
             <span>View All</span>
-            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
           </Link>
         </div>
 

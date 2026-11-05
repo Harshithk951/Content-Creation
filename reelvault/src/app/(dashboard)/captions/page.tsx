@@ -5,14 +5,13 @@ import {
   Hash,
   Copy,
   Check,
-  Sparkles,
   Calendar,
   Clock,
   Pin,
   MessageSquare,
-  Flame,
   ArrowRight,
   Save,
+  Send,
 } from "lucide-react";
 import { VideoRecord } from "@/types/video";
 import { fetchVideos, updateVideo } from "@/lib/video-service";
@@ -31,7 +30,7 @@ export default function CaptionsPage() {
   const [pinnedComment, setPinnedComment] = useState("");
   const [cta, setCta] = useState("");
   const [postingDate, setPostingDate] = useState("");
-  const [postingTime, setPostingTime] = useState("18:30"); // Prime 6:30 PM slot for reels
+  const [postingTime, setPostingTime] = useState("18:30");
 
   // Copied button states
   const [copiedKey, setCopiedKey] = useState<string | null>(null);
@@ -65,7 +64,7 @@ export default function CaptionsPage() {
     }
     navigator.clipboard.writeText(text);
     setCopiedKey(key);
-    toast.success(`Copied ${label}`, "Ready to paste on Instagram!");
+    toast.success(`Copied ${label}`, "Ready to paste on Instagram");
     setTimeout(() => setCopiedKey(null), 2000);
   };
 
@@ -90,7 +89,7 @@ export default function CaptionsPage() {
     if (!activeVideo) return;
     try {
       setSaving(true);
-      const updated = await updateVideo(activeVideo.id, {
+      await updateVideo(activeVideo.id, {
         caption,
         hashtags,
         pinned_comment: pinnedComment,
@@ -98,11 +97,24 @@ export default function CaptionsPage() {
         scheduled_at: postingDate ? `${postingDate}T${postingTime}:00Z` : null,
       });
 
-      setVideos((prev) => prev.map((v) => (v.id === updated.id ? updated : v)));
-      toast.success("Saved", "Instagram package updated successfully");
-    } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Save failed";
-      toast.error("Failed to save", msg);
+      setVideos((prev) =>
+        prev.map((v) =>
+          v.id === activeVideo.id
+            ? {
+                ...v,
+                caption,
+                hashtags,
+                pinned_comment: pinnedComment,
+                cta,
+                scheduled_at: postingDate ? `${postingDate}T${postingTime}:00Z` : null,
+              }
+            : v
+        )
+      );
+
+      toast.success("Package saved", `Updated metadata for Day ${activeVideo.episode_number}`);
+    } catch {
+      toast.error("Failed to save changes");
     } finally {
       setSaving(false);
     }
@@ -113,66 +125,73 @@ export default function CaptionsPage() {
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.06] pb-5">
         <div>
-          <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.25em] text-brand uppercase font-bold">
+          <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.2em] text-brand uppercase font-medium">
             <Hash className="w-3.5 h-3.5" />
-            <span>Distribution Kit</span>
+            <span>Distribution Suite</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mt-1">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-[-0.03em] text-white mt-1">
             Captions & Publishing Package
           </h2>
-          <p className="text-xs text-zinc-400 mt-1">
-            Instagram Reel caption, verified hashtags, and pinned comment for each episode.
+          <p className="text-xs text-zinc-400 mt-1 font-normal">
+            Optimized copy, pinned comments, and hashtag sets for Instagram reels.
           </p>
         </div>
 
-        {/* 1-Click Copy Full Package CTA */}
-        <button
-          onClick={handleCopyFullPackage}
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-bold transition-all hover:scale-[1.02] active:scale-[0.98]"
-        >
-          {copiedKey === "full-package" ? (
-            <Check className="w-4 h-4" />
-          ) : (
-            <Copy className="w-4 h-4" />
-          )}
-          <span>{copiedKey === "full-package" ? "Package Copied!" : "Copy Full Publishing Suite"}</span>
-        </button>
+        {/* Global Copy Button */}
+        <div className="flex items-center gap-3">
+          <button
+            onClick={handleCopyFullPackage}
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-medium transition-colors"
+          >
+            {copiedKey === "full-package" ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
+            <span>{copiedKey === "full-package" ? "Package Copied" : "Copy Full Package"}</span>
+          </button>
+        </div>
       </div>
 
       {/* Episode Selector Tabs */}
       <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
-        {videos.map((v) => (
+        {videos.map((vid) => (
           <button
-            key={v.id}
-            onClick={() => setSelectedVideoId(v.id)}
-            className={`px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all border ${
-              activeVideo?.id === v.id
-                ? "bg-brand/15 text-brand border-brand/40 shadow-subtle"
-                : "bg-[#121319] text-zinc-400 hover:text-white border-[#212431]"
+            key={vid.id}
+            onClick={() => setSelectedVideoId(vid.id)}
+            className={`px-3.5 py-2 rounded-xl text-xs font-mono tabular-nums whitespace-nowrap transition-colors border ${
+              activeVideo?.id === vid.id
+                ? "bg-white text-black font-semibold border-white"
+                : "bg-white/[0.03] text-zinc-400 border-white/[0.06] hover:bg-white/[0.06] hover:text-white"
             }`}
           >
-            Day {v.episode_number.toString().padStart(2, "0")} • {v.title.slice(0, 24)}...
+            Day {vid.episode_number.toString().padStart(2, "0")} • {vid.title.slice(0, 24)}...
           </button>
         ))}
       </div>
 
-      {activeVideo ? (
+      {loading ? (
+        <div className="h-96 rounded-2xl bg-white/[0.02] border border-white/[0.06] animate-pulse" />
+      ) : !activeVideo ? (
+        <div className="p-12 text-center rounded-2xl bg-[#090a0f] border border-white/[0.06] text-zinc-500 font-mono text-xs">
+          No video records found. Ingest your first reel to generate publishing packages.
+        </div>
+      ) : (
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* Main Editing Column (2 cols) */}
-          <div className="lg:col-span-2 space-y-6">
-            {/* Caption Block */}
-            <div className="p-6 rounded-2xl bg-[#111218] border border-[#212432] space-y-3 shadow-subtle">
+          <div className="lg:col-span-2 space-y-5">
+            {/* 1. Instagram Caption */}
+            <div className="p-6 rounded-2xl bg-[#090a0f] border border-white/[0.06] space-y-3">
               <div className="flex items-center justify-between">
-                <label className="text-xs font-bold uppercase tracking-wider text-zinc-300 flex items-center gap-1.5">
-                  <MessageSquare className="w-4 h-4 text-brand" />
-                  Instagram Caption
-                </label>
+                <div>
+                  <h3 className="text-xs font-mono tracking-[0.18em] uppercase text-zinc-400 font-medium">
+                    Primary Caption
+                  </h3>
+                  <p className="text-[11px] text-zinc-500 mt-0.5">Hook, body value delivery, and engagement trigger</p>
+                </div>
+
                 <button
                   onClick={() => handleCopy(caption, "caption", "Caption")}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#191b26] hover:bg-[#222535] text-brand text-xs font-semibold border border-brand/20 transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-zinc-300 text-xs font-mono transition-colors border border-white/[0.06]"
                 >
-                  {copiedKey === "caption" ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
-                  <span>{copiedKey === "caption" ? "Copied" : "Copy Caption"}</span>
+                  {copiedKey === "caption" ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5 text-zinc-400" />}
+                  <span>{copiedKey === "caption" ? "Copied" : "Copy"}</span>
                 </button>
               </div>
 
@@ -180,28 +199,31 @@ export default function CaptionsPage() {
                 rows={6}
                 value={caption}
                 onChange={(e) => setCaption(e.target.value)}
-                placeholder="Write your hook, core breakdown with Harshith and Claude, and explanation here..."
-                className="w-full px-4 py-3 rounded-xl bg-[#161822] border border-[#272a3b] text-white text-sm focus:outline-none focus:border-brand transition-colors font-sans leading-relaxed"
+                className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.08] text-white text-xs focus:outline-none focus:border-brand transition-colors resize-none leading-relaxed font-sans"
+                placeholder="Write your reel caption..."
               />
-              <div className="flex justify-between text-[11px] text-zinc-500">
-                <span>Recommended: 125-250 characters before "More"</span>
-                <span className="font-mono">{caption.length} characters</span>
+              <div className="flex items-center justify-between text-[10px] font-mono tabular-nums text-zinc-500">
+                <span>{caption.length} characters</span>
+                <span>Optimized length: 150 – 350 chars</span>
               </div>
             </div>
 
-            {/* Hashtags Block */}
-            <div className="p-6 rounded-2xl bg-[#111218] border border-[#212432] space-y-3 shadow-subtle">
+            {/* 2. Hashtags Set */}
+            <div className="p-6 rounded-2xl bg-[#090a0f] border border-white/[0.06] space-y-3">
               <div className="flex items-center justify-between">
-                <label className="text-xs font-bold uppercase tracking-wider text-zinc-300 flex items-center gap-1.5">
-                  <Hash className="w-4 h-4 text-brand" />
-                  Hashtags
-                </label>
+                <div>
+                  <h3 className="text-xs font-mono tracking-[0.18em] uppercase text-zinc-400 font-medium">
+                    Hashtag Set
+                  </h3>
+                  <p className="text-[11px] text-zinc-500 mt-0.5">Categorization tags for algorithmic feed discovery</p>
+                </div>
+
                 <button
                   onClick={() => handleCopy(hashtags, "hashtags", "Hashtags")}
-                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#191b26] hover:bg-[#222535] text-brand text-xs font-semibold border border-brand/20 transition-colors"
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/[0.04] hover:bg-white/[0.08] text-zinc-300 text-xs font-mono transition-colors border border-white/[0.06]"
                 >
-                  {copiedKey === "hashtags" ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
-                  <span>{copiedKey === "hashtags" ? "Copied" : "Copy Hashtags"}</span>
+                  {copiedKey === "hashtags" ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5 text-zinc-400" />}
+                  <span>{copiedKey === "hashtags" ? "Copied" : "Copy"}</span>
                 </button>
               </div>
 
@@ -209,25 +231,22 @@ export default function CaptionsPage() {
                 rows={3}
                 value={hashtags}
                 onChange={(e) => setHashtags(e.target.value)}
-                placeholder="#100DaysOfFreeAI #AI #OpenSource #DevTools..."
-                className="w-full px-4 py-3 rounded-xl bg-[#161822] border border-[#272a3b] text-brand/90 font-mono text-xs focus:outline-none focus:border-brand transition-colors leading-relaxed"
+                className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.08] text-zinc-300 text-xs focus:outline-none focus:border-brand transition-colors resize-none font-mono leading-relaxed"
+                placeholder="#100DaysOfFreeAI #AI #OpenSource..."
               />
-              <p className="text-[11px] text-zinc-500">
-                3-5 broad tags, 3-5 niche developer tags, and #100DaysOfFreeAI
-              </p>
             </div>
 
-            {/* Pinned Comment & CTA */}
+            {/* 3. Pinned Comment & CTA Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-5 rounded-2xl bg-[#111218] border border-[#212432] space-y-3">
+              <div className="p-5 rounded-2xl bg-[#090a0f] border border-white/[0.06] space-y-3">
                 <div className="flex items-center justify-between">
-                  <label className="text-xs font-bold uppercase tracking-wider text-zinc-300 flex items-center gap-1.5">
-                    <Pin className="w-3.5 h-3.5 text-amber-400" />
+                  <label className="text-xs font-mono tracking-[0.18em] uppercase text-zinc-400 font-medium flex items-center gap-1.5">
+                    <Pin className="w-3.5 h-3.5 text-brand" />
                     Pinned Comment
                   </label>
                   <button
                     onClick={() => handleCopy(pinnedComment, "pinned", "Pinned Comment")}
-                    className="p-1 text-zinc-400 hover:text-brand transition-colors"
+                    className="p-1 text-zinc-400 hover:text-white transition-colors"
                     title="Copy Pinned Comment"
                   >
                     {copiedKey === "pinned" ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
@@ -237,19 +256,19 @@ export default function CaptionsPage() {
                   rows={3}
                   value={pinnedComment}
                   onChange={(e) => setPinnedComment(e.target.value)}
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-[#161822] border border-[#272a3b] text-white text-xs focus:outline-none focus:border-brand transition-colors resize-none leading-relaxed"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-white/[0.03] border border-white/[0.08] text-white text-xs focus:outline-none focus:border-brand transition-colors resize-none leading-relaxed"
                 />
               </div>
 
-              <div className="p-5 rounded-2xl bg-[#111218] border border-[#212432] space-y-3">
+              <div className="p-5 rounded-2xl bg-[#090a0f] border border-white/[0.06] space-y-3">
                 <div className="flex items-center justify-between">
-                  <label className="text-xs font-bold uppercase tracking-wider text-zinc-300 flex items-center gap-1.5">
-                    <Flame className="w-3.5 h-3.5 text-brand" />
+                  <label className="text-xs font-mono tracking-[0.18em] uppercase text-zinc-400 font-medium flex items-center gap-1.5">
+                    <Send className="w-3.5 h-3.5 text-brand" />
                     Call to Action (CTA)
                   </label>
                   <button
                     onClick={() => handleCopy(cta, "cta", "CTA")}
-                    className="p-1 text-zinc-400 hover:text-brand transition-colors"
+                    className="p-1 text-zinc-400 hover:text-white transition-colors"
                     title="Copy CTA"
                   >
                     {copiedKey === "cta" ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
@@ -259,7 +278,7 @@ export default function CaptionsPage() {
                   rows={3}
                   value={cta}
                   onChange={(e) => setCta(e.target.value)}
-                  className="w-full px-3.5 py-2.5 rounded-xl bg-[#161822] border border-[#272a3b] text-white text-xs focus:outline-none focus:border-brand transition-colors resize-none leading-relaxed"
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-white/[0.03] border border-white/[0.08] text-white text-xs focus:outline-none focus:border-brand transition-colors resize-none leading-relaxed"
                 />
               </div>
             </div>
@@ -269,79 +288,71 @@ export default function CaptionsPage() {
               <button
                 onClick={handleSave}
                 disabled={saving}
-                className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-[#1a1c27] hover:bg-[#232636] text-white text-sm font-semibold border border-[#2e3146] transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-medium transition-colors disabled:opacity-50"
               >
-                <Save className="w-4 h-4 text-brand" />
+                <Save className="w-3.5 h-3.5" />
                 <span>{saving ? "Saving..." : "Save Package Changes"}</span>
               </button>
             </div>
           </div>
 
-          {/* Publishing Schedule & Preview Column (1 col) */}
+          {/* Publishing Schedule Column (1 col) */}
           <div className="space-y-6">
-            <div className="p-6 rounded-2xl bg-[#111218] border border-[#212432] space-y-4 shadow-subtle">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-300 flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-brand" />
+            <div className="p-6 rounded-2xl bg-[#090a0f] border border-white/[0.06] space-y-4 shadow-subtle">
+              <h3 className="text-xs font-mono tracking-[0.18em] uppercase text-zinc-400 font-medium flex items-center gap-2">
+                <Calendar className="w-3.5 h-3.5 text-brand" />
                 Publishing Schedule
               </h3>
 
               <div className="space-y-1.5">
-                <label className="text-xs font-semibold text-zinc-400">Target Posting Date</label>
+                <label className="text-[11px] font-mono uppercase tracking-wider text-zinc-500">Posting Date</label>
                 <input
                   type="date"
                   value={postingDate}
                   onChange={(e) => setPostingDate(e.target.value)}
-                  className="w-full px-3.5 py-2 rounded-xl bg-[#161822] border border-[#272a3b] text-white text-xs focus:outline-none focus:border-brand"
+                  className="w-full px-3.5 py-2 rounded-xl bg-white/[0.03] border border-white/[0.08] text-white text-xs font-mono focus:outline-none focus:border-brand"
                 />
               </div>
 
               <div className="space-y-1.5">
-                <label className="text-xs font-semibold text-zinc-400">Target Posting Time</label>
+                <label className="text-[11px] font-mono uppercase tracking-wider text-zinc-500">Posting Time</label>
                 <input
                   type="time"
                   value={postingTime}
                   onChange={(e) => setPostingTime(e.target.value)}
-                  className="w-full px-3.5 py-2 rounded-xl bg-[#161822] border border-[#272a3b] text-white text-xs focus:outline-none focus:border-brand"
+                  className="w-full px-3.5 py-2 rounded-xl bg-white/[0.03] border border-white/[0.08] text-white text-xs font-mono focus:outline-none focus:border-brand"
                 />
               </div>
 
-              <div className="p-3.5 rounded-xl bg-[#161822] border border-[#252837] space-y-1">
-                <p className="text-[11px] font-semibold text-brand">Peak Engagement Window</p>
-                <p className="text-xs text-zinc-300">
-                  Best performing reel posting time: <strong className="text-white">6:00 PM – 8:30 PM</strong> in your primary viewer timezone.
+              <div className="p-3.5 rounded-xl bg-white/[0.02] border border-white/[0.05] space-y-1">
+                <p className="text-[10px] font-mono uppercase tracking-wider text-brand font-medium">Slot Recommendation</p>
+                <p className="text-xs text-zinc-400 font-normal leading-relaxed">
+                  Prime reel release window: <strong className="text-white font-medium">6:00 PM – 8:30 PM</strong> in your core viewer timezone.
                 </p>
               </div>
             </div>
 
-            {/* Instagram Feed Preview Card */}
-            <div className="p-5 rounded-2xl bg-[#111218] border border-[#212432] space-y-3">
+            {/* Feed Metadata Preview */}
+            <div className="p-5 rounded-2xl bg-[#090a0f] border border-white/[0.06] space-y-3">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-brand to-amber-500 flex items-center justify-center text-white text-xs font-bold">
+                <div className="w-7 h-7 rounded-lg bg-zinc-800 flex items-center justify-center text-white text-xs font-medium">
                   H
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-white">harshith.dev</p>
-                  <p className="text-[10px] text-zinc-400">100 Days of Free AI</p>
+                  <p className="text-xs font-medium text-white">harshith.ai</p>
+                  <p className="text-[10px] font-mono text-zinc-500">100 Days of Free AI</p>
                 </div>
               </div>
 
-              <div className="p-3 rounded-xl bg-[#0b0c10] border border-[#1f222d] text-xs space-y-2">
-                <p className="font-semibold text-white">
-                  Day {activeVideo.episode_number}: {activeVideo.title}
-                </p>
-                <p className="text-zinc-300 line-clamp-4 leading-relaxed font-sans">
-                  {caption}
-                </p>
-                <p className="text-brand/90 font-mono text-[11px] line-clamp-2">
-                  {hashtags}
-                </p>
-              </div>
+              <p className="text-xs text-zinc-300 leading-relaxed font-sans line-clamp-4">
+                {caption}
+              </p>
+
+              <p className="text-[11px] text-zinc-500 font-mono line-clamp-2">
+                {hashtags}
+              </p>
             </div>
           </div>
-        </div>
-      ) : (
-        <div className="p-12 text-center text-zinc-400 rounded-2xl bg-[#111218] border border-[#212432]">
-          Upload a video to manage captions and hashtags.
         </div>
       )}
     </div>

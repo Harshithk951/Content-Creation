@@ -42,8 +42,25 @@ const config: Config = {
         sm: "8px",
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "Inter", "-apple-system", "sans-serif"],
-        mono: ["var(--font-geist-mono)", "monospace"],
+        sans: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"SF Pro Text"',
+          '"SF Pro Display"',
+          '"Geist"',
+          '"Inter"',
+          "system-ui",
+          "sans-serif",
+        ],
+        mono: [
+          '"JetBrains Mono"',
+          '"SF Mono"',
+          "Menlo",
+          "Monaco",
+          "Consolas",
+          '"Geist Mono"',
+          "monospace",
+        ],
       },
       boxShadow: {
         subtle: "0 1px 2px 0 rgba(0, 0, 0, 0.4)",

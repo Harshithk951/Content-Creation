@@ -64,14 +64,14 @@ export default function LibraryPage() {
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.06] pb-5">
         <div>
-          <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.25em] text-brand uppercase font-bold">
+          <div className="flex items-center gap-2 font-mono text-[10px] tracking-[0.2em] text-brand uppercase font-medium">
             <Film className="w-3.5 h-3.5" />
             <span>Archive Index</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mt-1">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-[-0.03em] text-white mt-1">
             Master Reel Library
           </h2>
-          <p className="text-xs text-zinc-400 mt-1">
+          <p className="text-xs text-zinc-400 mt-1 font-normal">
             Completed 9:16 vertical video masters for 100 Days of Free AI.
           </p>
         </div>
@@ -87,7 +87,7 @@ export default function LibraryPage() {
 
           <Link
             href="/upload"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-bold transition-all hover:scale-[1.02] active:scale-[0.98]"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-medium transition-colors"
           >
             <UploadCloud className="w-3.5 h-3.5" />
             <span>Ingest Reel</span>
@@ -104,20 +104,20 @@ export default function LibraryPage() {
             placeholder="Search by title, episode number, topic, or caption..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-9 pr-4 py-2 rounded-xl bg-[#11131c] border border-white/[0.06] text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-brand transition-colors font-mono"
+            className="w-full pl-9 pr-4 py-2 rounded-xl bg-white/[0.03] border border-white/[0.08] text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-brand transition-colors font-mono"
           />
         </div>
 
         <div className="flex items-center gap-2 flex-wrap sm:flex-nowrap">
           {/* Status Tabs */}
-          <div className="flex items-center p-1 rounded-xl bg-[#11131c] border border-white/[0.06] text-xs font-mono">
+          <div className="flex items-center p-1 rounded-xl bg-white/[0.03] border border-white/[0.06] text-xs font-mono">
             {(["All", "Ready", "Published", "Draft"] as const).map((st) => (
               <button
                 key={st}
                 onClick={() => setStatusFilter(st)}
-                className={`px-3 py-1.5 rounded-lg text-[11px] font-semibold transition-colors ${
+                className={`px-3 py-1.5 rounded-lg text-[10px] font-mono tracking-wider uppercase transition-colors ${
                   statusFilter === st
-                    ? "bg-brand text-white shadow-subtle"
+                    ? "bg-white text-black font-semibold shadow-subtle"
                     : "text-zinc-400 hover:text-zinc-200"
                 }`}
               >
@@ -127,18 +127,18 @@ export default function LibraryPage() {
           </div>
 
           {/* Sort Selector */}
-          <div className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-[#11131c] border border-white/[0.06] text-xs font-mono text-zinc-300">
-            <ArrowUpDown className="w-3.5 h-3.5 text-zinc-400" />
+          <div className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white/[0.03] border border-white/[0.06] text-xs font-mono text-zinc-300">
+            <ArrowUpDown className="w-3.5 h-3.5 text-zinc-500" />
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as any)}
-              className="bg-transparent text-[11px] text-white focus:outline-none cursor-pointer"
+              className="bg-transparent text-[10px] font-mono tracking-wider uppercase text-white focus:outline-none cursor-pointer"
             >
-              <option value="newest" className="bg-[#11131c] text-white">Newest First</option>
-              <option value="oldest" className="bg-[#11131c] text-white">Oldest First</option>
-              <option value="episode-asc" className="bg-[#11131c] text-white">Day 1 → 100</option>
-              <option value="episode-desc" className="bg-[#11131c] text-white">Day 100 → 1</option>
-              <option value="title" className="bg-[#11131c] text-white">Title A → Z</option>
+              <option value="newest" className="bg-[#090a0f] text-white">Newest First</option>
+              <option value="oldest" className="bg-[#090a0f] text-white">Oldest First</option>
+              <option value="episode-asc" className="bg-[#090a0f] text-white">Day 1 → 100</option>
+              <option value="episode-desc" className="bg-[#090a0f] text-white">Day 100 → 1</option>
+              <option value="title" className="bg-[#090a0f] text-white">Title A → Z</option>
             </select>
           </div>
         </div>
@@ -148,10 +148,7 @@ export default function LibraryPage() {
       {loading ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {[1, 2, 3, 4, 5, 6].map((n) => (
-            <div
-              key={n}
-              className="h-96 rounded-2xl bg-white/[0.02] border border-white/[0.05] animate-pulse"
-            />
+            <div key={n} className="h-80 rounded-2xl bg-white/[0.02] border border-white/[0.05] animate-pulse" />
           ))}
         </div>
       ) : videos.length === 0 ? (

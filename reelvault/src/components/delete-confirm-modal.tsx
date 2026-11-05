@@ -35,36 +35,36 @@ export function DeleteConfirmModal({ video, isOpen, onClose, onSuccess }: Delete
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in">
-      <div className="relative w-full max-w-md bg-[#121319] border border-red-500/25 rounded-2xl shadow-2xl p-6 overflow-hidden">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-sm animate-fade-in">
+      <div className="relative w-full max-w-md bg-[#090a0f] border border-red-500/20 rounded-3xl shadow-2xl p-6 overflow-hidden">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-1.5 text-zinc-400 hover:text-white rounded-lg hover:bg-zinc-800 transition-colors"
+          className="absolute top-4 right-4 p-1.5 text-zinc-400 hover:text-white rounded-lg hover:bg-white/[0.06] transition-colors"
         >
-          <X className="w-5 h-5" />
+          <X className="w-4 h-4" />
         </button>
 
         <div className="flex items-center gap-3 mb-4">
-          <div className="p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400">
-            <AlertTriangle className="w-6 h-6" />
+          <div className="p-2.5 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400">
+            <AlertTriangle className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="font-bold text-lg text-white">Delete Video</h3>
-            <p className="text-xs text-zinc-400">This action cannot be undone.</p>
+            <h3 className="font-medium text-base text-white tracking-tight">Delete Reel Master</h3>
+            <p className="text-[11px] text-zinc-500 font-mono">This action is permanent and cannot be undone.</p>
           </div>
         </div>
 
-        <p className="text-sm text-zinc-300 leading-relaxed mb-6">
+        <p className="text-xs text-zinc-400 leading-relaxed mb-6 font-normal">
           Are you sure you want to permanently delete{" "}
-          <strong className="text-white font-semibold">"{video.title}"</strong> (Day {video.episode_number})?
-          This will remove both the database record and the original MP4 file from Supabase Storage.
+          <strong className="text-white font-medium">"{video.title}"</strong> (Day {video.episode_number})?
+          This will purge both the database metadata and the original MP4 file from Supabase Storage.
         </p>
 
         <div className="flex items-center justify-end gap-3">
           <button
             type="button"
             onClick={onClose}
-            className="px-4 py-2.5 rounded-xl bg-[#1a1c26] hover:bg-[#222533] text-zinc-300 text-sm font-medium transition-colors"
+            className="px-4 py-2 rounded-xl bg-white/[0.03] hover:bg-white/[0.06] text-zinc-400 text-xs font-mono transition-colors border border-white/[0.06]"
           >
             Cancel
           </button>
@@ -72,10 +72,10 @@ export function DeleteConfirmModal({ video, isOpen, onClose, onSuccess }: Delete
             type="button"
             disabled={loading}
             onClick={handleDelete}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white text-sm font-semibold transition-all shadow-subtle disabled:opacity-50"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-medium transition-colors disabled:opacity-50"
           >
-            <Trash2 className="w-4 h-4" />
-            <span>{loading ? "Deleting..." : "Delete Permanently"}</span>
+            <Trash2 className="w-3.5 h-3.5" />
+            <span>{loading ? "Deleting..." : "Delete Master MP4"}</span>
           </button>
         </div>
       </div>
