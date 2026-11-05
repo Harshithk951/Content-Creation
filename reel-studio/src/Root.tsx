@@ -96,71 +96,71 @@ const episode1Eli5Lines: DialogueLine[] = [
   },
 ];
 
-// Episode 2: Midjourney vs Flux.1 Schnell (38s / 1140 frames)
+// Episode 2: Midjourney vs Flux.1 Schnell (26.67s / 800 frames with ElevenLabs Liam & George)
 const episode2Lines: DialogueLine[] = [
   {
     speaker: "boy",
     text: "Claude, I need Midjourney for thumbnails.",
     emotion: "annoyed",
     camera: "BOY_FOCUS",
-    startFrame: 0,
-    durationFrames: 90,
+    startFrame: 9,
+    durationFrames: 75,
   },
   {
     speaker: "claude",
     text: "No you don't. You need Flux.",
     emotion: "smug",
     camera: "CLAUDE_FOCUS",
-    startFrame: 90,
-    durationFrames: 90,
+    startFrame: 84,
+    durationFrames: 56,
   },
   {
     speaker: "boy",
     text: "Flux? That free thing? It looks cheap.",
     emotion: "surprised",
     camera: "BOY_FOCUS",
-    startFrame: 180,
-    durationFrames: 120,
+    startFrame: 140,
+    durationFrames: 71,
   },
   {
     speaker: "claude",
     text: "Flux.1 Schnell. Open-source. Same quality. Zero dollars.",
     emotion: "neutral",
     camera: "CLAUDE_FOCUS",
-    startFrame: 300,
-    durationFrames: 180,
+    startFrame: 211,
+    durationFrames: 131,
   },
   {
     speaker: "boy",
     text: "But Midjourney has better styles.",
     emotion: "annoyed",
     camera: "BOY_FOCUS",
-    startFrame: 480,
-    durationFrames: 150,
+    startFrame: 342,
+    durationFrames: 69,
   },
   {
     speaker: "claude",
     text: "Flux does photoreal, anime, 3D, text in image. In your browser.",
     emotion: "excited",
     camera: "CLAUDE_FOCUS",
-    startFrame: 630,
-    durationFrames: 180,
+    startFrame: 411,
+    durationFrames: 137,
   },
   {
     speaker: "boy",
     text: "So I just cancelled Midjourney?",
     emotion: "excited",
     camera: "BOY_FOCUS",
-    startFrame: 810,
-    durationFrames: 150,
+    startFrame: 548,
+    durationFrames: 63,
   },
   {
     speaker: "claude",
     text: "You just saved $120 a year. Comment FREE for setup.",
     emotion: "smug",
     camera: "PUNCHLINE_SNAP",
-    startFrame: 960,
-    durationFrames: 180,
+    startFrame: 611,
+    durationFrames: 189,
   },
 ];
 
@@ -216,7 +216,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="WhiteboardEpisode2"
         component={WhiteboardSceneDay2}
-        durationInFrames={1140}
+        durationInFrames={800}
         fps={30}
         width={1080}
         height={1920}

@@ -226,16 +226,16 @@ export const WhiteboardSceneDay2: React.FC<WhiteboardSceneDay2Props> = ({
       {/* ───────────────────────────────────────────────────────── */}
 
       {/* ═════════════════════════════════════════════════════════ */}
-      {/* SCENE 1: MIDJOURNEY $120/YR TRAP (Frames 0 - 180)          */}
+      {/* SCENE 1: MIDJOURNEY $120/YR TRAP (Frames 0 - 138)         */}
       {/* ═════════════════════════════════════════════════════════ */}
-      {frame < 180 && (
+      {frame < 138 && (
         <div
           style={{
             position: "absolute",
             top: 245,
             left: 60,
             right: 60,
-            opacity: frame < 170 ? fadeIn(5, 10) : fadeOut(170, 10),
+            opacity: frame < 128 ? fadeIn(0, 8) : fadeOut(128, 10),
             zIndex: 20,
           }}
         >
@@ -290,11 +290,11 @@ export const WhiteboardSceneDay2: React.FC<WhiteboardSceneDay2Props> = ({
               strokeWidth="4.5"
               strokeLinecap="round"
               strokeDasharray="120"
-              strokeDashoffset={120 * drawProgress(25, 20)}
+              strokeDashoffset={120 * drawProgress(15, 18)}
             />
 
             {/* 2. Subscription Cost Card */}
-            <g opacity={fadeIn(35, 12)}>
+            <g opacity={fadeIn(25, 10)}>
               <rect
                 x="530"
                 y="30"
@@ -323,7 +323,7 @@ export const WhiteboardSceneDay2: React.FC<WhiteboardSceneDay2Props> = ({
                 strokeWidth="10"
                 strokeLinecap="round"
                 strokeDasharray="520"
-                strokeDashoffset={520 * drawProgress(70, 25)}
+                strokeDashoffset={520 * drawProgress(55, 22)}
               />
               <path
                 d="M 520 25 L 930 245"
@@ -331,7 +331,7 @@ export const WhiteboardSceneDay2: React.FC<WhiteboardSceneDay2Props> = ({
                 strokeWidth="10"
                 strokeLinecap="round"
                 strokeDasharray="520"
-                strokeDashoffset={520 * drawProgress(85, 25)}
+                strokeDashoffset={520 * drawProgress(70, 22)}
               />
             </g>
           </svg>
@@ -339,16 +339,16 @@ export const WhiteboardSceneDay2: React.FC<WhiteboardSceneDay2Props> = ({
       )}
 
       {/* ═════════════════════════════════════════════════════════ */}
-      {/* SCENE 2: STEP CARD 1 — FLUX.1 SCHNELL (Frames 180 - 480)   */}
+      {/* SCENE 2: STEP CARD 1 — FLUX.1 SCHNELL (Frames 138 - 338)   */}
       {/* ═════════════════════════════════════════════════════════ */}
-      {frame >= 180 && frame < 480 && (
+      {frame >= 138 && frame < 338 && (
         <div
           style={{
             position: "absolute",
             top: 245,
             left: 60,
             right: 60,
-            opacity: frame < 470 ? fadeIn(180, 10) : fadeOut(470, 10),
+            opacity: frame < 328 ? fadeIn(138, 10) : fadeOut(328, 10),
             zIndex: 20,
           }}
         >
@@ -449,16 +449,16 @@ export const WhiteboardSceneDay2: React.FC<WhiteboardSceneDay2Props> = ({
       )}
 
       {/* ═════════════════════════════════════════════════════════ */}
-      {/* SCENE 3: STEP CARD 2 — 4 STYLES ALL FREE (480 - 810)       */}
+      {/* SCENE 3: STEP CARD 2 — 4 STYLES ALL FREE (338 - 544)       */}
       {/* ═════════════════════════════════════════════════════════ */}
-      {frame >= 480 && frame < 810 && (
+      {frame >= 338 && frame < 544 && (
         <div
           style={{
             position: "absolute",
             top: 240,
             left: 60,
             right: 60,
-            opacity: frame < 800 ? fadeIn(480, 10) : fadeOut(800, 10),
+            opacity: frame < 534 ? fadeIn(338, 10) : fadeOut(534, 10),
             zIndex: 20,
           }}
         >
@@ -592,16 +592,16 @@ export const WhiteboardSceneDay2: React.FC<WhiteboardSceneDay2Props> = ({
       )}
 
       {/* ═════════════════════════════════════════════════════════ */}
-      {/* SCENE 4: SUMMARY & $120/YR SAVINGS (Frames 810 - 1140)     */}
+      {/* SCENE 4: SUMMARY & $120/YR SAVINGS (Frames 544 - 800)      */}
       {/* ═════════════════════════════════════════════════════════ */}
-      {frame >= 810 && (
+      {frame >= 544 && (
         <div
           style={{
             position: "absolute",
             top: 245,
             left: 60,
             right: 60,
-            opacity: fadeIn(810, 10),
+            opacity: fadeIn(544, 10),
             zIndex: 20,
           }}
         >
@@ -774,9 +774,9 @@ export const WhiteboardSceneDay2: React.FC<WhiteboardSceneDay2Props> = ({
       )}
 
       {/* ───────────────────────────────────────────────────────── */}
-      {/* 7. PROMINENT COMMENT CTA (Frames 960 - 1140 / 32-38s)      */}
+      {/* 7. PROMINENT COMMENT CTA (Frames 611 - 800)                */}
       {/* ───────────────────────────────────────────────────────── */}
-      {frame >= 960 && (
+      {frame >= 611 && (
         <div
           style={{
             position: "absolute",
@@ -787,8 +787,8 @@ export const WhiteboardSceneDay2: React.FC<WhiteboardSceneDay2Props> = ({
             flexDirection: "column",
             alignItems: "center",
             zIndex: 95,
-            opacity: fadeIn(960, 12),
-            transform: `scale(${interpolate(frame, [960, 980], [0.92, 1], {
+            opacity: fadeIn(611, 10),
+            transform: `scale(${interpolate(frame, [611, 626], [0.92, 1], {
               extrapolateLeft: "clamp",
               extrapolateRight: "clamp",
             })})`,

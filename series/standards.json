@@ -1,0 +1,56 @@
+{
+  "series_title": "100 DAYS OF FREE AI",
+  "aspect_ratio": "9:16",
+  "resolution": {
+    "width": 1080,
+    "height": 1920
+  },
+  "fps": 30,
+  "audio_standards": {
+    "provider": "ElevenLabs",
+    "model_id": "eleven_turbo_v2_5",
+    "sample_rate": 48000,
+    "loudness_target_lufs": -14,
+    "conversational_turn_gap_seconds": 0.32,
+    "conversational_turn_gap_frames": 10,
+    "voices": {
+      "harshith": {
+        "speaker_label": "Harshith",
+        "voice_name": "Liam",
+        "voice_id": "TX3LPaxmHKxFdv7VOQHJ",
+        "characteristics": "Energetic, youthful adult tech creator",
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.80,
+          "style": 0.20,
+          "use_speaker_boost": true
+        },
+        "accent_color": "#2563EB",
+        "avatar_path": "avatars/harshith_official.jpg"
+      },
+      "claude": {
+        "speaker_label": "Claude",
+        "voice_name": "George",
+        "voice_id": "JBFqnCBsd6RMkjVDRZzb",
+        "characteristics": "Warm, British, articulate, deadpan / witty robotic companion",
+        "settings": {
+          "stability": 0.55,
+          "similarity_boost": 0.80,
+          "style": 0.20,
+          "use_speaker_boost": true
+        },
+        "accent_color": "#F97316",
+        "avatar_path": "avatars/claude_official.jpg"
+      }
+    }
+  },
+  "visual_layout_rules": {
+    "style": "Lemo Opuscar Clean Whiteboard Explainer",
+    "series_header_top_px": 90,
+    "concept_card_top_px": 245,
+    "character_circle_top_px": 780,
+    "dialogue_subtitles_top_px": 1090,
+    "comment_cta_top_px": 1260,
+    "mobile_safe_zone_bottom_px": 1720
+  }
+}
