@@ -1,13 +1,29 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { ToastProvider } from "@/components/toast";
 
+export const viewport: Viewport = {
+  themeColor: "#FAF8F5",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: "cover",
+};
+
 export const metadata: Metadata = {
-  title: "ReelVault — 100 Days of Free AI | Personal Video Library",
+  title: "100 Days of Free AI — Harshith Kumar & Claude",
   description:
-    "Production video library for Harshith and Claude's 100 Days of Free AI Instagram educational Reel series. Store, preview, and download completed 9:16 videos.",
+    "Daily free AI video masterclasses, open-source code workflows, and verified setup guides. Zero subscriptions required.",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "100 Days Free AI",
+  },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/avatars/harshith_official.jpg",
+    apple: "/avatars/harshith_official.jpg",
   },
 };
 
@@ -17,8 +33,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className="bg-[#090a0d] text-zinc-100 antialiased font-sans min-h-screen selection:bg-brand/30 selection:text-white">
+    <html lang="en">
+      <body className="bg-[#FAF8F5] text-stone-900 antialiased font-sans min-h-screen selection:bg-orange-500 selection:text-white">
         <ToastProvider>{children}</ToastProvider>
       </body>
     </html>
