@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "100 Days of Free AI",
+    "slug": "100-days-of-free-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FAF8F5"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.harshith.freeai",
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"]
+      }
+    },
+    "android": {
+      "package": "com.harshith.freeai",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FAF8F5"
+      },
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "updates": {
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD",
+      "fallbackToCacheTimeout": 30000
+    },
+    "extra": {
+      "eas": {
+        "projectId": "100-days-of-free-ai"
+      },
+      "supabaseUrl": "https://tqtfkuhtvkevqhhmnkfv.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRxdGZrdWh0dmtldnFoaG1ua2Z2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUyNDEyMDMsImV4cCI6MjA3MDgxNzIwM30.yXNC4ibZmHtO0o6BEttF7sBET4sF49Kr4vmGkHu3-C4",
+      "notionGuideUrl": "https://app.notion.com/p/40f7cd75d68b81bda8d6e3bf4a7e4866",
+      "instagramUrl": "https://instagram.com/harshith.claude"
+    }
+  }
+}
