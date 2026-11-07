@@ -37,9 +37,10 @@ export default function CaptionsPage() {
 
   useEffect(() => {
     fetchVideos().then((list) => {
-      setVideos(list);
-      if (list.length > 0) {
-        setSelectedVideoId(list[0].id);
+      const sorted = [...list].sort((a, b) => b.episode_number - a.episode_number);
+      setVideos(sorted);
+      if (sorted.length > 0) {
+        setSelectedVideoId(sorted[0].id);
       }
       setLoading(false);
     });
@@ -335,11 +336,11 @@ export default function CaptionsPage() {
             {/* Feed Metadata Preview */}
             <div className="p-5 rounded-2xl bg-[#090a0f] border border-white/[0.06] space-y-3">
               <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-zinc-800 flex items-center justify-center text-white text-xs font-medium">
-                  H
+                <div className="w-7 h-7 rounded-lg overflow-hidden border border-orange-500/30">
+                  <img src="/avatars/harshith_official.jpg" alt="Harshith" className="w-full h-full object-cover" />
                 </div>
                 <div>
-                  <p className="text-xs font-medium text-white">harshith.ai</p>
+                  <p className="text-xs font-semibold text-white">@harshith.claude</p>
                   <p className="text-[10px] font-mono text-zinc-500">100 Days of Free AI</p>
                 </div>
               </div>

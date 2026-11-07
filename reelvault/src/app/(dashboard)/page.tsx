@@ -5,7 +5,6 @@ import Link from "next/link";
 import {
   Film,
   ArrowRight,
-  UploadCloud,
   Play,
   Download,
   Copy,
@@ -14,6 +13,9 @@ import {
   Volume2,
   Monitor,
   Check,
+  MessageSquare,
+  Sparkles,
+  ExternalLink,
 } from "lucide-react";
 import { VideoRecord, VideoStats } from "@/types/video";
 import { fetchVideos, fetchVideoStats, getVideoDownloadUrl, getVideoPlayUrl } from "@/lib/video-service";
@@ -24,13 +26,16 @@ import { VideoEditModal } from "@/components/video-edit-modal";
 import { DeleteConfirmModal } from "@/components/delete-confirm-modal";
 import { EmptyState } from "@/components/empty-state";
 import { useToast } from "@/components/toast";
+import { formatBytes, formatDuration } from "@/lib/utils";
 
 export default function OverviewPage() {
   const { toast } = useToast();
   const [videos, setVideos] = useState<VideoRecord[]>([]);
   const [stats, setStats] = useState<VideoStats | null>(null);
   const [loading, setLoading] = useState(true);
-  const [copied, setCopied] = useState(false);
+  const [selectedEpisodeId, setSelectedEpisodeId] = useState<string>("");
+  const [copiedCaption, setCopiedCaption] = useState(false);
+  const [copiedComment, setCopiedComment] = useState(false);
   const [featuredVideoSrc, setFeaturedVideoSrc] = useState<string>("");
 
   // Modals state
@@ -48,9 +53,12 @@ export default function OverviewPage() {
       setVideos(vList);
       setStats(vStats);
 
-      const f = vList.find((v) => v.episode_number === 1) || vList[0];
-      if (f) {
-        getVideoPlayUrl(f.storage_path).then(setFeaturedVideoSrc).catch(() => {});
+      // Default to highest episode number (e.g. Day 03)
+      if (vList.length > 0) {
+        const sorted = [...vList].sort((a, b) => b.episode_number - a.episode_number);
+        const latest = sorted[0];
+        setSelectedEpisodeId(latest.id);
+        getVideoPlayUrl(latest.storage_path).then(setFeaturedVideoSrc).catch(() => {});
       }
     } catch (err) {
       console.error("Failed to load dashboard data", err);
@@ -63,12 +71,18 @@ export default function OverviewPage() {
     loadData();
   }, [loadData]);
 
-  const featured = videos.find((v) => v.episode_number === 1) || videos[0];
+  // Selected episode for the hero showcase
+  const activeEpisode = videos.find((v) => v.id === selectedEpisodeId) || videos[0];
+
+  const handleSelectEpisode = (video: VideoRecord) => {
+    setSelectedEpisodeId(video.id);
+    getVideoPlayUrl(video.storage_path).then(setFeaturedVideoSrc).catch(() => {});
+  };
 
   const handleDownload = async () => {
-    if (!featured) return;
+    if (!activeEpisode) return;
     try {
-      const { url, filename } = await getVideoDownloadUrl(featured);
+      const { url, filename } = await getVideoDownloadUrl(activeEpisode);
       const link = document.createElement("a");
       link.href = url;
       link.setAttribute("download", filename);
@@ -82,120 +96,233 @@ export default function OverviewPage() {
   };
 
   const handleCopyCaption = () => {
-    if (!featured?.caption) return;
-    navigator.clipboard.writeText(featured.caption);
-    setCopied(true);
-    toast.success("Caption copied", "Ready to paste on Instagram");
-    setTimeout(() => setCopied(false), 2000);
+    if (!activeEpisode?.caption) return;
+    const fullText = activeEpisode.hashtags
+      ? `${activeEpisode.caption}\n\n${activeEpisode.hashtags}`
+      : activeEpisode.caption;
+    navigator.clipboard.writeText(fullText);
+    setCopiedCaption(true);
+    toast.success("Caption copied", "Caption & hashtags ready for Instagram");
+    setTimeout(() => setCopiedCaption(false), 2000);
   };
 
+  const handleCopyPinnedComment = () => {
+    if (!activeEpisode?.pinned_comment) return;
+    navigator.clipboard.writeText(activeEpisode.pinned_comment);
+    setCopiedComment(true);
+    toast.success("Pinned comment copied", "Ready to paste as 1st comment");
+    setTimeout(() => setCopiedComment(false), 2000);
+  };
+
+  // Sort episodes descending for switcher pills
+  const sortedEpisodes = [...videos].sort((a, b) => b.episode_number - a.episode_number);
+
   return (
-    <div className="space-y-8 animate-fade-in pb-16">
+    <div className="space-y-6 sm:space-y-8 animate-fade-in pb-16">
       {/* Telemetry Stats Strip */}
       <StatsCards stats={stats} loading={loading} />
 
       {/* Featured Master Reel Showcase */}
-      {featured && (
-        <div className="rounded-3xl bg-[#090a0f] border border-white/[0.08] p-6 lg:p-8 relative overflow-hidden">
-          <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
-            {/* Left Column: Metadata & Actions */}
-            <div className="space-y-4 max-w-2xl flex-1">
-              <div className="flex items-center gap-2">
-                <span className="font-mono text-[10px] tracking-[0.2em] text-brand uppercase font-medium">
-                  Episode 01 Master
-                </span>
-                <span className="text-zinc-600">•</span>
-                <span className="font-mono text-[10px] tracking-[0.16em] text-emerald-400 uppercase font-medium">
-                  Status: Ready for Posting
-                </span>
-              </div>
+      {activeEpisode && (
+        <div className="relative p-1 rounded-2xl sm:rounded-3xl bg-white/[0.02] border border-white/[0.08] shadow-2xl overflow-hidden">
+          {/* Ambient Radial Colored Glow */}
+          <div className="absolute -top-32 -left-32 w-80 h-80 rounded-full bg-orange-500/10 blur-[90px] pointer-events-none" />
+          <div className="absolute -bottom-32 -right-32 w-80 h-80 rounded-full bg-blue-500/10 blur-[90px] pointer-events-none" />
 
-              <h2 className="text-2xl sm:text-3xl font-semibold tracking-[-0.03em] text-white leading-tight">
-                {featured.title}
-              </h2>
-
-              <p className="text-sm text-zinc-400 leading-relaxed max-w-xl font-normal">
-                {featured.description || "The 82M open-weight text-to-speech model running 100% locally on CPU without subscriptions or cloud fees."}
-              </p>
-
-              {/* Technical Telemetry Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-2 text-xs font-mono tabular-nums">
-                <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                  <span className="text-[10px] text-zinc-500 uppercase tracking-wider block">Duration</span>
-                  <span className="font-medium text-white mt-0.5 block">38.67s</span>
-                </div>
-                <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                  <span className="text-[10px] text-zinc-500 uppercase tracking-wider block">Resolution</span>
-                  <span className="font-medium text-white mt-0.5 block">1080×1920</span>
-                </div>
-                <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                  <span className="text-[10px] text-zinc-500 uppercase tracking-wider block">Loudness</span>
-                  <span className="font-medium text-emerald-400 mt-0.5 block">-14.0 LUFS</span>
-                </div>
-                <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                  <span className="text-[10px] text-zinc-500 uppercase tracking-wider block">File Size</span>
-                  <span className="font-medium text-white mt-0.5 block">6.49 MB</span>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="flex items-center gap-3 pt-3 flex-wrap">
-                <button
-                  onClick={() => setPreviewVideo(featured)}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-medium transition-colors"
-                >
-                  <Play className="w-3.5 h-3.5 fill-black" />
-                  <span>Preview 9:16 Reel</span>
-                </button>
-
-                <button
-                  onClick={handleDownload}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-white text-xs font-medium border border-white/[0.08] transition-colors"
-                >
-                  <Download className="w-3.5 h-3.5 text-brand" />
-                  <span>Download Master MP4</span>
-                </button>
-
-                <button
-                  onClick={handleCopyCaption}
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.02] hover:bg-white/[0.06] text-zinc-300 text-xs font-medium border border-white/[0.06] transition-colors"
-                >
-                  {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5 text-zinc-400" />}
-                  <span>{copied ? "Caption Copied" : "Copy Caption"}</span>
-                </button>
-              </div>
+          <div className="relative rounded-[calc(1rem-2px)] sm:rounded-[calc(1.5rem-4px)] bg-[#090a0f]/95 p-5 sm:p-7 lg:p-8 backdrop-blur-xl">
+            {/* Episode Selector Tabs */}
+            <div className="flex items-center gap-2 overflow-x-auto pb-3 mb-5 border-b border-white/[0.06] scrollbar-none">
+              <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500 mr-2 shrink-0">
+                Switch Episode:
+              </span>
+              {sortedEpisodes.map((ep) => {
+                const isSelected = ep.id === activeEpisode.id;
+                return (
+                  <button
+                    key={ep.id}
+                    onClick={() => handleSelectEpisode(ep)}
+                    className={`shrink-0 px-3 py-1.5 rounded-xl font-mono text-xs transition-all flex items-center gap-2 min-h-[36px] ${
+                      isSelected
+                        ? "bg-white text-black font-semibold shadow-md"
+                        : "bg-white/[0.03] text-zinc-400 hover:text-white hover:bg-white/[0.07] border border-white/[0.06]"
+                    }`}
+                  >
+                    <span>DAY {ep.episode_number.toString().padStart(2, "0")}</span>
+                    {ep.episode_number === 3 && (
+                      <span className={`px-1.5 py-0.2 rounded text-[9px] font-bold uppercase ${
+                        isSelected ? "bg-orange-600 text-white" : "bg-orange-500/20 text-orange-400"
+                      }`}>
+                        Latest
+                      </span>
+                    )}
+                  </button>
+                );
+              })}
             </div>
 
-            {/* Right Column: 9:16 Mini Theatre Card */}
-            <div
-              onClick={() => setPreviewVideo(featured)}
-              className="w-full lg:w-64 aspect-[9/16] rounded-2xl bg-black border border-white/[0.08] overflow-hidden cursor-pointer relative group/preview shrink-0 shadow-2xl"
-            >
-              {featuredVideoSrc ? (
-                <video
-                  src={featuredVideoSrc}
-                  preload="metadata"
-                  muted
-                  loop
-                  playsInline
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <div className="w-full h-full bg-[#0d0e14] flex items-center justify-center text-zinc-600 font-mono text-xs">
-                  1080 × 1920
+            <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 lg:gap-8">
+              {/* Left Column: Metadata & Instagram Station */}
+              <div className="space-y-4 w-full flex-1">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="font-mono text-[10px] tracking-[0.2em] text-orange-400 uppercase font-semibold px-2 py-0.5 rounded bg-orange-500/10 border border-orange-500/20">
+                    Day {activeEpisode.episode_number.toString().padStart(2, "0")} Master
+                  </span>
+                  <span className="text-zinc-600">•</span>
+                  <span className="font-mono text-[10px] tracking-[0.16em] text-emerald-400 uppercase font-medium flex items-center gap-1.5">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    Status: {activeEpisode.status}
+                  </span>
+                  <span className="text-zinc-600">•</span>
+                  <span className="font-mono text-[10px] text-zinc-400">
+                    {activeEpisode.series_name}
+                  </span>
                 </div>
-              )}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40 pointer-events-none" />
 
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-12 h-12 rounded-full bg-white/90 text-black flex items-center justify-center shadow-lg transition-transform group-hover/preview:scale-105">
-                  <Play className="w-5 h-5 translate-x-0.5 fill-black" />
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-[-0.03em] text-white leading-tight">
+                  {activeEpisode.title}
+                </h2>
+
+                <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed font-normal line-clamp-3">
+                  {activeEpisode.description ||
+                    "Standardized AI production series featuring Harshith & Claude co-hosts. 100% free tool workflows with zero subscriptions."}
+                </p>
+
+                {/* Technical Telemetry Grid */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1 text-xs font-mono tabular-nums">
+                  <div className="p-2.5 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                    <span className="text-[9px] text-zinc-500 uppercase tracking-wider block">Duration</span>
+                    <span className="font-medium text-white mt-0.5 block">
+                      {formatDuration(activeEpisode.duration_seconds)}
+                    </span>
+                  </div>
+                  <div className="p-2.5 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                    <span className="text-[9px] text-zinc-500 uppercase tracking-wider block">Resolution</span>
+                    <span className="font-medium text-white mt-0.5 block">
+                      {activeEpisode.resolution || "1080×1920"}
+                    </span>
+                  </div>
+                  <div className="p-2.5 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                    <span className="text-[9px] text-zinc-500 uppercase tracking-wider block">Target Audio</span>
+                    <span className="font-medium text-emerald-400 mt-0.5 block">-14.0 LUFS</span>
+                  </div>
+                  <div className="p-2.5 rounded-xl bg-white/[0.02] border border-white/[0.06]">
+                    <span className="text-[9px] text-zinc-500 uppercase tracking-wider block">File Size</span>
+                    <span className="font-medium text-white mt-0.5 block">
+                      {formatBytes(activeEpisode.file_size)}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Quick Instagram Publishing Station */}
+                <div className="pt-2 space-y-2.5">
+                  <span className="text-[10px] font-mono uppercase tracking-wider text-zinc-500 flex items-center gap-1.5">
+                    <Sparkles className="w-3 h-3 text-orange-400" />
+                    Quick Publishing Station (1-Tap Copy)
+                  </span>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    <button
+                      onClick={handleCopyCaption}
+                      className="min-h-[44px] flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.07] active:bg-white/[0.1] text-xs font-medium text-zinc-200 border border-white/[0.07] transition-all"
+                    >
+                      <div className="flex items-center gap-2">
+                        {copiedCaption ? (
+                          <Check className="w-4 h-4 text-emerald-400" />
+                        ) : (
+                          <Copy className="w-4 h-4 text-orange-400" />
+                        )}
+                        <span>{copiedCaption ? "Caption Copied!" : "Copy Instagram Caption"}</span>
+                      </div>
+                      <span className="text-[10px] font-mono text-zinc-500 uppercase">1-Tap</span>
+                    </button>
+
+                    <button
+                      onClick={handleCopyPinnedComment}
+                      className="min-h-[44px] flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.07] active:bg-white/[0.1] text-xs font-medium text-zinc-200 border border-white/[0.07] transition-all"
+                    >
+                      <div className="flex items-center gap-2">
+                        {copiedComment ? (
+                          <Check className="w-4 h-4 text-emerald-400" />
+                        ) : (
+                          <MessageSquare className="w-4 h-4 text-cyan-400" />
+                        )}
+                        <span>{copiedComment ? "Comment Copied!" : "Copy Pinned Comment"}</span>
+                      </div>
+                      <span className="text-[10px] font-mono text-zinc-500 uppercase">1-Tap</span>
+                    </button>
+                  </div>
+                </div>
+
+                {/* Master Action Buttons */}
+                <div className="flex items-center gap-2.5 pt-2 flex-wrap">
+                  <button
+                    onClick={() => setPreviewVideo(activeEpisode)}
+                    className="min-h-[44px] inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 active:bg-zinc-300 text-xs font-semibold transition-colors shadow-lg"
+                  >
+                    <Play className="w-3.5 h-3.5 fill-black" />
+                    <span>Preview 9:16 Reel</span>
+                  </button>
+
+                  <button
+                    onClick={handleDownload}
+                    className="min-h-[44px] inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/[0.05] hover:bg-white/[0.09] active:bg-white/[0.14] text-white text-xs font-medium border border-white/[0.08] transition-colors"
+                  >
+                    <Download className="w-3.5 h-3.5 text-orange-400" />
+                    <span>Download Master MP4</span>
+                  </button>
+
+                  <a
+                    href="https://app.notion.com/p/40f7cd75d68b81bda8d6e3bf4a7e4866"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="min-h-[44px] inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-white/[0.02] hover:bg-white/[0.06] text-zinc-300 text-xs font-medium border border-white/[0.06] transition-colors"
+                  >
+                    <span>Notion Guide</span>
+                    <ExternalLink className="w-3 h-3 text-zinc-400" />
+                  </a>
                 </div>
               </div>
 
-              <div className="absolute bottom-3 inset-x-3 flex items-center justify-between text-[10px] font-mono tabular-nums text-zinc-300">
-                <span className="px-2 py-0.5 rounded bg-black/80 backdrop-blur-md border border-white/[0.08]">00:00:38:20</span>
-                <span className="px-2 py-0.5 rounded bg-white text-black font-semibold">DAY 01</span>
+              {/* Right Column: 9:16 Mini Theatre Card (Optimized for Mobile) */}
+              <div className="w-full sm:w-auto flex justify-center shrink-0">
+                <div
+                  onClick={() => setPreviewVideo(activeEpisode)}
+                  className="w-full max-w-[240px] sm:max-w-[260px] lg:w-64 aspect-[9/16] rounded-2xl bg-black border border-white/[0.1] overflow-hidden cursor-pointer relative group/preview shrink-0 shadow-2xl transition-transform hover:scale-[1.02]"
+                >
+                  {featuredVideoSrc ? (
+                    <video
+                      key={activeEpisode.id}
+                      src={featuredVideoSrc}
+                      preload="metadata"
+                      muted
+                      loop
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-[#0d0e14] flex items-center justify-center text-zinc-600 font-mono text-xs">
+                      1080 × 1920
+                    </div>
+                  )}
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40 pointer-events-none" />
+
+                  {/* Pulsing Play Overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-13 h-13 w-12 h-12 rounded-full bg-white text-black flex items-center justify-center shadow-2xl transition-transform group-hover/preview:scale-110">
+                      <Play className="w-5 h-5 translate-x-0.5 fill-black" />
+                    </div>
+                  </div>
+
+                  <div className="absolute bottom-3 inset-x-3 flex items-center justify-between text-[10px] font-mono tabular-nums text-zinc-300">
+                    <span className="px-2 py-0.5 rounded-md bg-black/80 backdrop-blur-md border border-white/[0.08]">
+                      {formatDuration(activeEpisode.duration_seconds)}
+                    </span>
+                    <span className="px-2 py-0.5 rounded-md bg-orange-500 text-black font-bold uppercase">
+                      DAY {activeEpisode.episode_number.toString().padStart(2, "0")}
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -213,9 +340,9 @@ export default function OverviewPage() {
 
           <Link
             href="/library"
-            className="flex items-center gap-1.5 text-xs text-zinc-400 hover:text-white font-mono uppercase tracking-wider font-medium group transition-colors"
+            className="flex items-center gap-1.5 text-xs text-zinc-400 hover:text-white font-mono uppercase tracking-wider font-medium group transition-colors min-h-[36px]"
           >
-            <span>View All</span>
+            <span>View All ({videos.length})</span>
             <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
           </Link>
         </div>
