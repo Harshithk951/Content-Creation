@@ -263,35 +263,36 @@ export const WhiteboardSceneDay3: React.FC<WhiteboardSceneDay3Props> = ({
           <svg width="960" height="360" viewBox="0 0 960 360" fill="none">
             {/* 1. GitHub Copilot Subscription Card */}
             <rect
-              x="40"
-              y="20"
-              width="390"
-              height="220"
+              x="35"
+              y="18"
+              width="415"
+              height="224"
               rx="20"
               fill="#FFFFFF"
               stroke={INK_CHARCOAL}
               strokeWidth="3.5"
               style={{ filter: "drop-shadow(0 8px 24px rgba(0,0,0,0.06))" }}
             />
-            <text x="75" y="75" fill={INK_CHARCOAL} fontSize="28" fontWeight="800">
-              🤖 GitHub Copilot Individual
+            <text x="60" y="68" fill={INK_CHARCOAL} fontSize="24" fontWeight="800">
+              🤖 GitHub Copilot
             </text>
-            <text x="75" y="120" fill="#4B5563" fontSize="22" fontWeight="700">
+            <text x="60" y="108" fill="#4B5563" fontSize="20" fontWeight="700">
               $10.00 / month ($120/yr)
             </text>
-            <text x="75" y="160" fill="#EF4444" fontSize="20" fontWeight="800">
+            <text x="60" y="148" fill="#EF4444" fontSize="18" fontWeight="800">
               ❌ Tab Autocomplete Only
             </text>
-            <text x="75" y="200" fill="#6B7280" fontSize="16" fontWeight="600">
+            <text x="60" y="186" fill="#6B7280" fontSize="15" fontWeight="600">
               Cannot edit multiple files or run tests
             </text>
 
             {/* Connecting Arrow */}
             <path
-              d="M 440 130 L 515 130 M 500 115 L 515 130 L 500 145"
+              d="M 460 130 L 500 130 M 488 118 L 500 130 L 488 142"
               stroke={INK_BLUE}
               strokeWidth="4.5"
               strokeLinecap="round"
+              strokeLinejoin="round"
               strokeDasharray="120"
               strokeDashoffset={120 * drawProgress(15, 18)}
             />
@@ -299,62 +300,62 @@ export const WhiteboardSceneDay3: React.FC<WhiteboardSceneDay3Props> = ({
             {/* 2. Subscription Cost Card */}
             <g opacity={fadeIn(25, 10)}>
               <rect
-                x="530"
-                y="20"
-                width="390"
-                height="220"
+                x="510"
+                y="18"
+                width="415"
+                height="224"
                 rx="20"
                 fill="#FFFFFF"
                 stroke={INK_CHARCOAL}
                 strokeWidth="3.5"
                 style={{ filter: "drop-shadow(0 8px 24px rgba(0,0,0,0.06))" }}
               />
-              <text x="565" y="85" fill={INK_CHARCOAL} fontSize="46" fontWeight="900">
+              <text x="717" y="80" fill={INK_CHARCOAL} fontSize="40" fontWeight="900" textAnchor="middle">
                 $10.00 / mo
               </text>
-              <text x="568" y="135" fill="#DC2626" fontSize="26" fontWeight="900">
+              <text x="717" y="122" fill="#DC2626" fontSize="24" fontWeight="900" textAnchor="middle">
                 = $120.00 / year
               </text>
-              <text x="568" y="175" fill="#6B7280" fontSize="19" fontWeight="600">
+              <text x="717" y="162" fill="#6B7280" fontSize="16" fontWeight="600" textAnchor="middle">
                 Recurring fee for basic suggestions
               </text>
 
-              {/* Progressive Orange Strike-Through Lines Across Cost */}
+              {/* Progressive Orange Strike-Through Lines Across Cost (contained strictly inside box) */}
               <path
-                d="M 520 235 L 930 25"
+                d="M 535 218 L 900 42"
                 stroke={INK_ORANGE}
-                strokeWidth="10"
+                strokeWidth="9"
                 strokeLinecap="round"
                 strokeDasharray="520"
                 strokeDashoffset={520 * drawProgress(55, 22)}
               />
               <path
-                d="M 520 25 L 930 235"
+                d="M 535 42 L 900 218"
                 stroke={INK_ORANGE}
-                strokeWidth="10"
+                strokeWidth="9"
                 strokeLinecap="round"
                 strokeDasharray="520"
                 strokeDashoffset={520 * drawProgress(75, 22)}
               />
             </g>
 
-            {/* Bottom Alert Pill */}
+            {/* Bottom Alert Pill - Expanded width and balanced font size */}
             <g opacity={fadeIn(100, 12)}>
               <rect
-                x="140"
-                y="265"
-                width="680"
-                height="56"
-                rx="16"
+                x="40"
+                y="262"
+                width="885"
+                height="62"
+                rx="18"
                 fill="#FEF2F2"
                 stroke="#EF4444"
                 strokeWidth="2.5"
               />
               <text
-                x="480"
-                y="302"
+                x="482"
+                y="301"
                 fill="#DC2626"
-                fontSize="22"
+                fontSize="18"
                 fontWeight="800"
                 textAnchor="middle"
               >

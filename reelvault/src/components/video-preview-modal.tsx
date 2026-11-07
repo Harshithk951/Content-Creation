@@ -164,12 +164,12 @@ export function VideoPreviewModal({ video, isOpen, onClose }: VideoPreviewModalP
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/90 backdrop-blur-md animate-fade-in">
-      <div className="relative w-full max-w-5xl max-h-[92vh] bg-[#090a0f] border border-white/[0.08] rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-stone-950/80 backdrop-blur-md animate-fade-in">
+      <div className="relative w-full max-w-5xl max-h-[92vh] bg-white border border-stone-200 rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row">
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 p-2 rounded-xl bg-black/60 hover:bg-white/[0.1] text-zinc-400 hover:text-white border border-white/[0.08] transition-colors"
+          className="absolute top-4 right-4 z-20 p-2 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-600 hover:text-stone-900 border border-stone-200 transition-colors"
         >
           <X className="w-4 h-4" />
         </button>
@@ -290,106 +290,106 @@ export function VideoPreviewModal({ video, isOpen, onClose }: VideoPreviewModalP
                 <span className="text-xs text-zinc-500 font-mono">• {video.series_name}</span>
               </div>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-white tracking-[-0.02em] leading-snug">
+              <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-[-0.02em] leading-snug">
                 {video.title}
               </h2>
               {video.description && (
-                <p className="text-xs text-zinc-400 mt-1.5 leading-relaxed font-normal">{video.description}</p>
+                <p className="text-xs text-stone-600 mt-1.5 leading-relaxed font-normal">{video.description}</p>
               )}
             </div>
 
             {/* Technical Specs Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-              <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                <div className="flex items-center gap-1.5 text-zinc-500 text-[10px] uppercase font-mono tracking-wider mb-1">
-                  <Clock className="w-3 h-3 text-zinc-400" />
+              <div className="p-3 rounded-xl bg-[#FAF8F5] border border-stone-200">
+                <div className="flex items-center gap-1.5 text-stone-500 text-[10px] uppercase font-mono tracking-wider mb-1">
+                  <Clock className="w-3 h-3 text-stone-400" />
                   <span>Duration</span>
                 </div>
-                <p className="font-mono tabular-nums text-xs font-medium text-white">
+                <p className="font-mono tabular-nums text-xs font-bold text-stone-900">
                   {formatDuration(video.duration_seconds)}
                 </p>
               </div>
 
-              <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                <div className="flex items-center gap-1.5 text-zinc-500 text-[10px] uppercase font-mono tracking-wider mb-1">
-                  <Monitor className="w-3 h-3 text-zinc-400" />
+              <div className="p-3 rounded-xl bg-[#FAF8F5] border border-stone-200">
+                <div className="flex items-center gap-1.5 text-stone-500 text-[10px] uppercase font-mono tracking-wider mb-1">
+                  <Monitor className="w-3 h-3 text-stone-400" />
                   <span>Resolution</span>
                 </div>
-                <p className="font-mono tabular-nums text-xs font-medium text-white">
+                <p className="font-mono tabular-nums text-xs font-bold text-stone-900">
                   {video.resolution || "1080 × 1920"}
                 </p>
               </div>
 
-              <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                <div className="flex items-center gap-1.5 text-zinc-500 text-[10px] uppercase font-mono tracking-wider mb-1">
-                  <HardDrive className="w-3 h-3 text-zinc-400" />
+              <div className="p-3 rounded-xl bg-[#FAF8F5] border border-stone-200">
+                <div className="flex items-center gap-1.5 text-stone-500 text-[10px] uppercase font-mono tracking-wider mb-1">
+                  <HardDrive className="w-3 h-3 text-stone-400" />
                   <span>File Size</span>
                 </div>
-                <p className="font-mono tabular-nums text-xs font-medium text-white">
+                <p className="font-mono tabular-nums text-xs font-bold text-stone-900">
                   {formatBytes(video.file_size)}
                 </p>
               </div>
 
-              <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.05]">
-                <div className="flex items-center gap-1.5 text-zinc-500 text-[10px] uppercase font-mono tracking-wider mb-1">
-                  <Calendar className="w-3 h-3 text-zinc-400" />
+              <div className="p-3 rounded-xl bg-[#FAF8F5] border border-stone-200">
+                <div className="flex items-center gap-1.5 text-stone-500 text-[10px] uppercase font-mono tracking-wider mb-1">
+                  <Calendar className="w-3 h-3 text-stone-400" />
                   <span>Created</span>
                 </div>
-                <p className="font-mono tabular-nums text-xs font-medium text-white truncate">
+                <p className="font-mono tabular-nums text-xs font-bold text-stone-900 truncate">
                   {formatDate(video.created_at)}
                 </p>
               </div>
             </div>
 
             {/* Instagram Caption Block */}
-            <div className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.06] space-y-2">
+            <div className="p-4 rounded-xl bg-[#FAF8F5] border border-stone-200 space-y-2">
               <div className="flex items-center justify-between">
-                <span className="text-[10px] font-mono tracking-[0.18em] uppercase text-zinc-400">
+                <span className="text-[10px] font-mono tracking-[0.18em] uppercase text-stone-600 font-bold">
                   Instagram Caption
                 </span>
                 <button
                   onClick={() => copyToClipboard(video.caption, "Caption")}
-                  className="flex items-center gap-1 text-[11px] text-zinc-400 hover:text-white font-mono transition-colors"
+                  className="flex items-center gap-1 text-[11px] text-stone-600 hover:text-stone-900 font-mono transition-colors font-semibold"
                 >
-                  {copiedField === "Caption" ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
+                  {copiedField === "Caption" ? <Check className="w-3 h-3 text-emerald-600" /> : <Copy className="w-3 h-3" />}
                   <span>{copiedField === "Caption" ? "Copied" : "Copy"}</span>
                 </button>
               </div>
-              <p className="text-xs text-zinc-300 whitespace-pre-wrap leading-relaxed max-h-32 overflow-y-auto font-sans">
+              <p className="text-xs text-stone-700 whitespace-pre-wrap leading-relaxed max-h-32 overflow-y-auto font-sans">
                 {video.caption || "No caption provided."}
               </p>
             </div>
 
             {/* Hashtags Block */}
-            <div className="p-4 rounded-xl bg-white/[0.02] border border-white/[0.06] space-y-2">
+            <div className="p-4 rounded-xl bg-[#FAF8F5] border border-stone-200 space-y-2">
               <div className="flex items-center justify-between">
-                <span className="text-[10px] font-mono tracking-[0.18em] uppercase text-zinc-400">
+                <span className="text-[10px] font-mono tracking-[0.18em] uppercase text-stone-600 font-bold">
                   Hashtags
                 </span>
                 <button
                   onClick={() => copyToClipboard(video.hashtags, "Hashtags")}
-                  className="flex items-center gap-1 text-[11px] text-zinc-400 hover:text-white font-mono transition-colors"
+                  className="flex items-center gap-1 text-[11px] text-stone-600 hover:text-stone-900 font-mono transition-colors font-semibold"
                 >
-                  {copiedField === "Hashtags" ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}
+                  {copiedField === "Hashtags" ? <Check className="w-3 h-3 text-emerald-600" /> : <Copy className="w-3 h-3" />}
                   <span>{copiedField === "Hashtags" ? "Copied" : "Copy"}</span>
                 </button>
               </div>
-              <p className="text-xs text-zinc-400 font-mono leading-relaxed max-h-20 overflow-y-auto">
+              <p className="text-xs text-stone-600 font-mono leading-relaxed max-h-20 overflow-y-auto">
                 {video.hashtags || "#100DaysOfFreeAI"}
               </p>
             </div>
           </div>
 
           {/* Bottom Actions: Direct Download */}
-          <div className="pt-5 border-t border-white/[0.06] flex items-center justify-between gap-4 mt-6">
-            <div className="text-[11px] text-zinc-500 font-mono truncate">
+          <div className="pt-5 border-t border-stone-200 flex items-center justify-between gap-4 mt-6">
+            <div className="text-[11px] text-stone-500 font-mono truncate">
               {generateDownloadFilename(video.episode_number, video.title, "mp4")}
             </div>
 
             <button
               onClick={handleDownload}
               disabled={isDownloading}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-zinc-200 text-xs font-medium transition-colors disabled:opacity-50"
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-stone-900 text-white hover:bg-stone-800 text-xs font-bold transition-colors disabled:opacity-50 shadow-sm"
             >
               <Download className="w-3.5 h-3.5" />
               <span>{isDownloading ? "Preparing..." : "Download Master MP4"}</span>

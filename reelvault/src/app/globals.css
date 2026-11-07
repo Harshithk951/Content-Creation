@@ -4,32 +4,32 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 4.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 4.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 18 100% 56%;
+    --background: 40 25% 97%; /* #FAF8F5 - warm off-white cream */
+    --foreground: 24 10% 10%; /* #1C1917 - deep stone charcoal */
+    --card: 0 0% 100%;        /* #FFFFFF - crisp paper cards on cream */
+    --card-foreground: 24 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 10% 10%;
+    --primary: 24 95% 53%;    /* #F97316 - Terracotta orange */
     --primary-foreground: 0 0% 100%;
     --secondary: 160 84% 39%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 240 5% 12%;
-    --muted-foreground: 240 5% 65%;
-    --accent: 240 5% 15%;
-    --accent-foreground: 0 0% 98%;
+    --muted: 40 15% 92%;      /* #EDEAE4 */
+    --muted-foreground: 24 6% 45%; /* #78716C */
+    --accent: 40 18% 94%;
+    --accent-foreground: 24 10% 10%;
     --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 6% 12%;
-    --input: 240 6% 12%;
-    --ring: 18 100% 56%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 40 12% 88%;     /* #E7E5E4 */
+    --input: 40 12% 88%;
+    --ring: 24 95% 53%;
     --radius: 0.85rem;
   }
 }
 
 body {
-  background-color: #06070a;
-  color: #ededed;
+  background-color: #FAF8F5; /* Warm off-white / ivory cream */
+  color: #1C1917;
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Geist", "Inter", -system-ui, sans-serif;
   letter-spacing: -0.011em;
   -webkit-font-smoothing: antialiased;
@@ -39,70 +39,69 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background-image: 
-    radial-gradient(at 0% 0%, rgba(255, 90, 31, 0.03) 0px, transparent 40%),
-    radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.02) 0px, transparent 40%),
-    radial-gradient(at 50% 100%, rgba(255, 255, 255, 0.01) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(249, 115, 22, 0.04) 0px, transparent 45%),
+    radial-gradient(at 100% 0%, rgba(37, 99, 235, 0.03) 0px, transparent 45%),
+    radial-gradient(at 50% 100%, rgba(234, 88, 12, 0.02) 0px, transparent 50%);
   background-attachment: fixed;
 }
 
-/* Custom Refined Scrollbar */
+/* Custom Refined Light Scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #060709;
+  background: #FAF8F5;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1c1e28;
+  background: #D6D3CD;
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2f3344;
+  background: #A8A29E;
 }
 
-/* High-End Glassmorphism & Hairline Borders */
+/* High-End Light Surfaces */
 .glass-surface {
-  background: rgba(14, 15, 20, 0.65);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(231, 229, 228, 0.85);
 }
 
 .glass-surface-elevated {
-  background: rgba(18, 20, 28, 0.75);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: #FFFFFF;
+  border: 1px solid rgba(229, 226, 218, 0.9);
   box-shadow: 
-    0 10px 30px -10px rgba(0, 0, 0, 0.6),
-    0 1px 1px 0 rgba(255, 255, 255, 0.05) inset;
+    0 10px 30px -10px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.03);
 }
 
-.glow-orange {
-  box-shadow: 0 0 32px -4px rgba(255, 90, 31, 0.35);
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.glow-emerald {
-  box-shadow: 0 0 32px -4px rgba(16, 185, 129, 0.35);
+.animate-fade-in {
+  animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.glow-teal {
-  box-shadow: 0 0 32px -4px rgba(6, 182, 212, 0.3);
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
-/* Micro Noise texture simulation via SVG */
-.noise-bg {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+.animate-pulse-subtle {
+  animation: pulseSubtle 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
-
-/* Audio wave animation bars */
-@keyframes soundwave {
-  0%, 100% { height: 4px; }
-  50% { height: 16px; }
-}
-
-.animate-wave-1 { animation: soundwave 1.1s ease-in-out infinite; }
-.animate-wave-2 { animation: soundwave 0.8s ease-in-out infinite 0.15s; }
-.animate-wave-3 { animation: soundwave 1.3s ease-in-out infinite 0.3s; }
-.animate-wave-4 { animation: soundwave 0.9s ease-in-out infinite 0.2s; }
