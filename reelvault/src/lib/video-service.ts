@@ -55,7 +55,33 @@ const SAMPLE_LOCAL_EPISODE_2: VideoRecord = {
   updated_at: new Date().toISOString(),
 };
 
-const DEFAULT_LOCAL_VIDEOS = [SAMPLE_LOCAL_EPISODE_2, SAMPLE_LOCAL_EPISODE_1];
+const SAMPLE_LOCAL_EPISODE_3: VideoRecord = {
+  id: "ep-03-local-cline",
+  user_id: "dc04941d-2849-4fd1-9a82-4e9fd18a0296",
+  title: "GitHub Copilot vs Cline + DeepSeek — $120/yr Saved",
+  episode_number: 3,
+  series_name: "100 Days of Free AI",
+  description: "Replace GitHub Copilot ($10/mo) with Cline + DeepSeek in VS Code for $0. An autonomous coding agent that creates files, runs terminal tests, and auto-fixes bugs.",
+  storage_path: "https://tqtfkuhtvkevqhhmnkfv.supabase.co/storage/v1/object/public/reel-videos/day-03-copilot-vs-cline.mp4",
+  thumbnail_path: null,
+  file_name: "100DaysOfFreeAI_Day03_CopilotVsCline.mp4",
+  file_size: 6724944,
+  duration_seconds: 37.9,
+  resolution: "1080 × 1920",
+  mime_type: "video/mp4",
+  caption: "DAY 03 / 100 — Stop paying $10/mo for GitHub Copilot.\n\nGitHub Copilot = $10/month = $120/year\nCline + DeepSeek = $0. Open-source. Autonomous agent.\n\nCopilot only autocompletes lines. Cline reads your entire repo, creates files across your project, runs terminal commands, and fixes test errors automatically.\n\nComment FREE and I'll send you the exact 1-click VS Code setup guide.\n\nSave this for your next coding project.",
+  hashtags: "#100daysoffreeai #githubcopilot #cline #deepseek #vscode #codingtools #developer #freedevtools #programming",
+  pinned_comment: "Setup: Open VS Code > Extensions > Search 'Cline' > Connect DeepSeek or Ollama > Start building. Want the step-by-step Notion guide? Comment FREE!",
+  cta: "Comment FREE below for the instant direct setup guide!",
+  topic_keywords: ["Cline", "DeepSeek", "GitHub Copilot", "VS Code", "Coding Agent", "Harshith and Claude"],
+  status: "Ready",
+  scheduled_at: null,
+  published_at: null,
+  created_at: new Date().toISOString(),
+  updated_at: new Date().toISOString(),
+};
+
+const DEFAULT_LOCAL_VIDEOS = [SAMPLE_LOCAL_EPISODE_3, SAMPLE_LOCAL_EPISODE_2, SAMPLE_LOCAL_EPISODE_1];
 
 // Re-export full 100-day series roadmap
 export { INITIAL_SERIES_ROADMAP } from "./series-roadmap";

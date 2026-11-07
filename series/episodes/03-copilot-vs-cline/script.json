@@ -1,0 +1,34 @@
+[
+  {
+    "speaker": "harshith",
+    "text": "Claude, GitHub Copilot wants ten dollars a month just to suggest code!"
+  },
+  {
+    "speaker": "claude",
+    "text": "Cancel it. You can get an autonomous coding agent for zero dollars."
+  },
+  {
+    "speaker": "harshith",
+    "text": "Wait, better than Copilot? For free?"
+  },
+  {
+    "speaker": "claude",
+    "text": "Cline in VS Code paired with DeepSeek. It doesn't just autocomplete, it builds full features and fixes bugs."
+  },
+  {
+    "speaker": "harshith",
+    "text": "Does it actually edit files across my project?"
+  },
+  {
+    "speaker": "claude",
+    "text": "It reads your repo, creates files, runs terminal commands, and debugs errors. All in your editor."
+  },
+  {
+    "speaker": "harshith",
+    "text": "So I just saved another one hundred and twenty dollars?"
+  },
+  {
+    "speaker": "claude",
+    "text": "Every single year. Comment FREE and I'll send you the one-click setup guide."
+  }
+]

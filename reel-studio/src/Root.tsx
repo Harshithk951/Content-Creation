@@ -4,6 +4,7 @@ import { CampfireScene } from "./Series/CampfireScene";
 import { StudioScene } from "./Series/StudioScene";
 import { WhiteboardScene } from "./Series/WhiteboardScene";
 import { WhiteboardSceneDay2 } from "./Series/WhiteboardSceneDay2";
+import { WhiteboardSceneDay3 } from "./Series/WhiteboardSceneDay3";
 import { DialogueLine } from "./Series/types";
 
 // Episode 1: ELI5 AI Voice Stack (ElevenLabs Voices: Liam + George)
@@ -164,6 +165,58 @@ const episode2Lines: DialogueLine[] = [
   },
 ];
 
+// Episode 3: GitHub Copilot vs Cline + DeepSeek (37.89s / 1137 frames with ElevenLabs Liam & George)
+const episode3Lines: DialogueLine[] = [
+  {
+    speaker: "boy",
+    text: "Claude, GitHub Copilot wants ten dollars a month just to suggest code!",
+    startFrame: 0,
+    durationFrames: 123,
+  },
+  {
+    speaker: "claude",
+    text: "Cancel it. You can get an autonomous coding agent for zero dollars.",
+    startFrame: 133,
+    durationFrames: 114,
+  },
+  {
+    speaker: "boy",
+    text: "Wait, better than Copilot? For free?",
+    startFrame: 257,
+    durationFrames: 92,
+  },
+  {
+    speaker: "claude",
+    text: "Cline in VS Code paired with DeepSeek. It doesn't just autocomplete, it builds full features and fixes bugs.",
+    startFrame: 358,
+    durationFrames: 202,
+  },
+  {
+    speaker: "boy",
+    text: "Does it actually edit files across my project?",
+    startFrame: 569,
+    durationFrames: 65,
+  },
+  {
+    speaker: "claude",
+    text: "It reads your repo, creates files, runs terminal commands, and debugs errors. All in your editor.",
+    startFrame: 644,
+    durationFrames: 188,
+  },
+  {
+    speaker: "boy",
+    text: "So I just saved another one hundred and twenty dollars?",
+    startFrame: 842,
+    durationFrames: 74,
+  },
+  {
+    speaker: "claude",
+    text: "Every single year. Comment FREE and I'll send you the one-click setup guide.",
+    startFrame: 925,
+    durationFrames: 142,
+  },
+];
+
 export const RemotionRoot: React.FC = () => {
   return (
     <>
@@ -224,6 +277,21 @@ export const RemotionRoot: React.FC = () => {
           lines: episode2Lines,
           audioSrc: "episode2_master.wav",
           seriesTitle: "100 DAYS OF FREE AI • DAY 02 / 100",
+        }}
+      />
+
+      {/* Setting E: 100 Days of Free AI Whiteboard Explainer Day 03 */}
+      <Composition
+        id="WhiteboardEpisode3"
+        component={WhiteboardSceneDay3}
+        durationInFrames={1137}
+        fps={30}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          lines: episode3Lines,
+          audioSrc: "episode3_master.wav",
+          seriesTitle: "100 DAYS OF FREE AI • DAY 03 / 100",
         }}
       />
     </>

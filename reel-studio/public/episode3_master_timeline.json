@@ -1,0 +1,86 @@
+{
+  "totalDurationSec": 37.889959000000005,
+  "totalFrames": 1137,
+  "lines": [
+    {
+      "index": 1,
+      "speaker": "harshith",
+      "startSec": 0.0,
+      "endSec": 4.102,
+      "startFrame": 0,
+      "durationFrames": 123,
+      "text": "Claude, GitHub Copilot wants ten dollars a month just to suggest code!",
+      "file": "/tmp/reel_audio_temp/line_00_harshith_clean.wav"
+    },
+    {
+      "index": 2,
+      "speaker": "claude",
+      "startSec": 4.422,
+      "endSec": 8.238,
+      "startFrame": 133,
+      "durationFrames": 114,
+      "text": "Cancel it. You can get an autonomous coding agent for zero dollars.",
+      "file": "/tmp/reel_audio_temp/line_01_claude_clean.wav"
+    },
+    {
+      "index": 3,
+      "speaker": "harshith",
+      "startSec": 8.558,
+      "endSec": 11.609,
+      "startFrame": 257,
+      "durationFrames": 92,
+      "text": "Wait, better than Copilot? For free?",
+      "file": "/tmp/reel_audio_temp/line_02_harshith_clean.wav"
+    },
+    {
+      "index": 4,
+      "speaker": "claude",
+      "startSec": 11.929,
+      "endSec": 18.661,
+      "startFrame": 358,
+      "durationFrames": 202,
+      "text": "Cline in VS Code paired with DeepSeek. It doesn't just autocomplete, it builds full features and fixes bugs.",
+      "file": "/tmp/reel_audio_temp/line_03_claude_clean.wav"
+    },
+    {
+      "index": 5,
+      "speaker": "harshith",
+      "startSec": 18.981,
+      "endSec": 21.139,
+      "startFrame": 569,
+      "durationFrames": 65,
+      "text": "Does it actually edit files across my project?",
+      "file": "/tmp/reel_audio_temp/line_04_harshith_clean.wav"
+    },
+    {
+      "index": 6,
+      "speaker": "claude",
+      "startSec": 21.459,
+      "endSec": 27.732,
+      "startFrame": 644,
+      "durationFrames": 188,
+      "text": "It reads your repo, creates files, runs terminal commands, and debugs errors. All in your editor.",
+      "file": "/tmp/reel_audio_temp/line_05_claude_clean.wav"
+    },
+    {
+      "index": 7,
+      "speaker": "harshith",
+      "startSec": 28.052,
+      "endSec": 30.51,
+      "startFrame": 842,
+      "durationFrames": 74,
+      "text": "So I just saved another one hundred and twenty dollars?",
+      "file": "/tmp/reel_audio_temp/line_06_harshith_clean.wav"
+    },
+    {
+      "index": 8,
+      "speaker": "claude",
+      "startSec": 30.83,
+      "endSec": 35.57,
+      "startFrame": 925,
+      "durationFrames": 142,
+      "text": "Every single year. Comment FREE and I'll send you the one-click setup guide.",
+      "file": "/tmp/reel_audio_temp/line_07_claude_clean.wav"
+    }
+  ]
+}
