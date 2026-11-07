@@ -2,7 +2,6 @@
 
 > **Series:** 100 Days of Free AI  
 > **Creator:** Harshith Kumar | **Instagram:** [@harshith.claude](https://instagram.com/harshith.claude)  
-> **Characters:** Harshith & Claude  
 > **Superpower:** Transform VS Code into an autonomous software engineer that writes, debugs, and runs code for $0.00 forever.
 
 ---
@@ -11,9 +10,11 @@
 
 Think of **GitHub Copilot** as a fancy typewriter that guesses the next word you want to type—and charges you **$10/month ($120/year)** for it.
 
-**Cline** is completely different. It's not an autocomplete tool—it's an **autonomous AI software engineer** that lives inside your VS Code.
-- It doesn't just guess lines; you describe a whole feature, and Cline reads your repo, creates files, edits code across multiple directories, runs terminal commands, and fixes compiler errors automatically.
-- When paired with **DeepSeek V3 / R1**, you get state-of-the-art coding intelligence that rivals Claude 3.5 Sonnet and GPT-4o for **$0.00**!
+**Cline** is completely different. It's not an autocomplete tool—it's an **autonomous AI software engineer** that lives inside your VS Code:
+- **Autonomous Planning:** You describe a feature in plain English, and Cline plans the architecture, creates new files, and writes code across your entire project.
+- **Runs Terminal Commands:** It runs `npm run build`, executes test suites, and inspects errors directly in your terminal.
+- **Auto-Fixes Bugs:** When a compiler error occurs, it reads the error stack trace and fixes its own mistake.
+- **100% Free with DeepSeek:** Paired with DeepSeek V3 / R1 (or local Ollama), you get GPT-4o / Claude 3.5 Sonnet level coding intelligence for $0.00!
 
 ---
 
@@ -46,41 +47,8 @@ Watch Cline:
 
 ---
 
-## 🎭 The Harshith & Claude Dialogue (Episode 3)
-
-**Harshith:** "Claude, GitHub Copilot wants ten dollars a month just to suggest code!"  
-**Claude:** "Cancel it. You can get an autonomous coding agent for zero dollars."  
-**Harshith:** "Wait, better than Copilot? For free?"  
-**Claude:** "Cline in VS Code paired with DeepSeek. It doesn't just autocomplete, it builds full features and fixes bugs."  
-**Harshith:** "Does it actually edit files across my project?"  
-**Claude:** "It reads your repo, creates files, runs terminal commands, and debugs errors. All in your editor."  
-**Harshith:** "So I just saved another one hundred and twenty dollars?"  
-**Claude:** "Every single year. Comment FREE and I'll send you the one-click setup guide."
-
----
-
-## 📱 Social Copy & Instagram Reel Assets
-
-### Caption (Copy-Paste for Instagram):
-```txt
-DAY 03 / 100 — Stop paying $10/mo for GitHub Copilot.
-
-GitHub Copilot = $10/month = $120/year
-Cline + DeepSeek = $0. Open-source. Autonomous agent.
-
-Copilot only autocompletes lines. Cline reads your entire repo, creates files across your project, runs terminal commands, and fixes test errors automatically.
-
-Comment FREE and I'll send you the exact 1-click VS Code setup guide.
-
-Save this for your next coding project.
-
-#100daysoffreeai #githubcopilot #cline #deepseek #vscode #codingtools #developer #freedevtools #programming
-```
-
-### First Pinned Comment:
-```txt
-Setup: Open VS Code > Extensions > Search "Cline" > Connect DeepSeek or Ollama > Start building. Want the step-by-step Notion guide? Comment FREE!
-```
+## 💡 Pro-Tip: Run 100% Free Offline with Ollama
+If you don't want to use API keys at all, install [**Ollama**](https://ollama.com), run `ollama run qwen2.5-coder:7b` in your terminal, and select **Ollama** inside Cline settings. Your code stays 100% on your laptop!
 
 ---
 

@@ -136,3 +136,14 @@ python3 .agents/skills/free-ai-reel-generator/scripts/push_to_dashboard.py \
 ```bash
 git add . && git commit -m "feat(epXX): complete Day XX video production & dashboard sync" && git push origin main
 ```
+
+### Step 6: Publish Viewer-Facing Notion Guide & Update Library
+1. Create the dedicated episode setup guide using `notion-create-pages`.
+2. **STRICT RULE FOR NOTION SETUP GUIDES:**
+   * Public Notion setup guides are strictly student/viewer-facing tutorials.
+   * **INCLUDE:** Hero callout, "Explain Like I'm 5", step-by-step setup instructions (download links, install commands, code snippets), pro-tips, and completion callout.
+   * **NEVER INCLUDE:**
+     * ❌ Do NOT include the dialogue script (`The Harshith & Claude Dialogue`).
+     * ❌ Do NOT include social copy / caption copy-paste boxes (`Social Copy & Instagram Reel Assets`).
+     * *(Dialogue scripts and Instagram captions belong strictly in the local repo and the ReelVault database, never in public tutorial guides).*
+3. Update the master **100 Days of Free AI — Guide Library** page (`40f7cd75-d68b-81bd-a8d6-e3bf4a7e4866`) to feature the new guide.

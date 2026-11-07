@@ -63,4 +63,8 @@
 2. **Audio Synthesis:** Synthesize lines using ElevenLabs `Liam` and `George` via `eleven_turbo_v2_5`.
 3. **Pacing Standardization:** Auto-trim silences and inject equal 320ms pauses between turns.
 4. **Composition:** Render with Remotion using the `WhiteboardScene` template.
-5. **Assets & Documentation:** Publish local guide and update Notion tracker.
+5. **Assets & Dashboard:** Push video and caption metadata to Supabase dashboard database.
+6. **Public Notion Guides (Strict Rule):**
+   * Public Notion setup guides are strictly student- and viewer-facing tutorials.
+   * **Only include:** Hero callout, ELI5 explanation, step-by-step tutorial instructions (download links, install commands, code snippets), pro-tips, and checklist.
+   * **NEVER include:** The character dialogue script (`The Harshith & Claude Dialogue`) or social copy / caption assets (`Social Copy & Instagram Reel Assets`). Those are internal creator assets that live in git and the dashboard.
