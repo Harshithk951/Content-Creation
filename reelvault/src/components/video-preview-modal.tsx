@@ -7,7 +7,6 @@ import {
   Pause,
   Volume2,
   VolumeX,
-  Maximize2,
   Download,
   Copy,
   Check,
@@ -30,15 +29,12 @@ interface VideoPreviewModalProps {
 
 export function VideoPreviewModal({ video, isOpen, onClose }: VideoPreviewModalProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(1);
   const [isMuted, setIsMuted] = useState(false);
-  const [playbackRate, setPlaybackRate] = useState(1);
   const [videoSrc, setVideoSrc] = useState<string>("");
   const [isDownloading, setIsDownloading] = useState(false);
   const [copiedField, setCopiedField] = useState<string | null>(null);
@@ -59,18 +55,13 @@ export function VideoPreviewModal({ video, isOpen, onClose }: VideoPreviewModalP
   }, [video, isOpen]);
 
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-      if (e.key === " " && document.activeElement?.tagName !== "INPUT" && document.activeElement?.tagName !== "TEXTAREA") {
-        e.preventDefault();
-        togglePlay();
-      }
-    };
-    if (isOpen) {
-      window.addEventListener("keydown", handleKeyDown);
+    if (isOpen && videoRef.current) {
+      videoRef.current.currentTime = 0;
+      videoRef.current.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
+    } else {
+      setIsPlaying(false);
     }
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, isPlaying]);
+  }, [isOpen, videoSrc]);
 
   if (!isOpen || !video) return null;
 
@@ -78,68 +69,48 @@ export function VideoPreviewModal({ video, isOpen, onClose }: VideoPreviewModalP
     if (!videoRef.current) return;
     if (isPlaying) {
       videoRef.current.pause();
+      setIsPlaying(false);
     } else {
-      videoRef.current.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
-
-  const handleTimeUpdate = () => {
-    if (!videoRef.current) return;
-    setCurrentTime(videoRef.current.currentTime);
-  };
-
-  const handleLoadedMetadata = () => {
-    if (!videoRef.current) return;
-    setDuration(videoRef.current.duration);
-  };
-
-  const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const time = parseFloat(e.target.value);
-    setCurrentTime(time);
-    if (videoRef.current) {
-      videoRef.current.currentTime = time;
+      videoRef.current.play().then(() => setIsPlaying(true)).catch(() => {});
     }
   };
 
-  const toggleMute = () => {
+  const toggleMute = (e: React.MouseEvent) => {
+    e.stopPropagation();
     if (!videoRef.current) return;
     const nextMuted = !isMuted;
     videoRef.current.muted = nextMuted;
     setIsMuted(nextMuted);
   };
 
-  const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const val = parseFloat(e.target.value);
-    setVolume(val);
+  const handleTimeUpdate = () => {
     if (videoRef.current) {
-      videoRef.current.volume = val;
-      videoRef.current.muted = val === 0;
-      setIsMuted(val === 0);
+      setCurrentTime(videoRef.current.currentTime);
     }
   };
 
-  const changePlaybackRate = (rate: number) => {
-    setPlaybackRate(rate);
+  const handleLoadedMetadata = () => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = rate;
+      setDuration(videoRef.current.duration);
     }
   };
 
-  const toggleFullscreen = () => {
-    if (!containerRef.current) return;
-    if (!document.fullscreenElement) {
-      containerRef.current.requestFullscreen().catch(() => {});
-    } else {
-      document.exitFullscreen().catch(() => {});
-    }
+  const handleSeek = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.stopPropagation();
+    if (!videoRef.current || !duration) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const ratio = Math.max(0, Math.min(1, clickX / rect.width));
+    const newTime = ratio * duration;
+    videoRef.current.currentTime = newTime;
+    setCurrentTime(newTime);
   };
 
-  const copyToClipboard = (text: string | null | undefined, fieldName: string) => {
+  const copyToClipboard = (text: string | null, fieldName: string) => {
     if (!text) return;
     navigator.clipboard.writeText(text);
     setCopiedField(fieldName);
-    toast.success(`Copied ${fieldName}`, "Ready to paste on Instagram");
+    toast.success(`${fieldName} copied`, "Ready to paste on Instagram");
     setTimeout(() => setCopiedField(null), 2000);
   };
 
@@ -163,131 +134,96 @@ export function VideoPreviewModal({ video, isOpen, onClose }: VideoPreviewModalP
     }
   };
 
+  const progressPercent = duration > 0 ? (currentTime / duration) * 100 : 0;
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-stone-950/80 backdrop-blur-md animate-fade-in">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-stone-950/80 backdrop-blur-md animate-fade-in">
       <div className="relative w-full max-w-5xl max-h-[92vh] bg-white border border-stone-200 rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row">
-        {/* Close Button */}
+        {/* Top-Right Modal Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 p-2 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-600 hover:text-stone-900 border border-stone-200 transition-colors"
+          className="absolute top-4 right-4 z-30 w-9 h-9 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 hover:text-stone-900 flex items-center justify-center transition-colors shadow-xs"
+          title="Close modal"
         >
           <X className="w-4 h-4" />
         </button>
 
-        {/* Left Side: 9:16 Vertical Video Player */}
-        <div
-          ref={containerRef}
-          className="lg:w-[420px] bg-black flex flex-col items-center justify-center relative p-5 select-none shrink-0"
-        >
-          <div className="relative w-full max-w-[320px] aspect-[9/16] bg-[#050608] rounded-2xl overflow-hidden border border-white/[0.08] flex items-center justify-center">
+        {/* Left Side: Clean Instagram Reels Video Player (No Unnecessary Buttons) */}
+        <div className="lg:w-[400px] bg-stone-950 flex flex-col items-center justify-center relative p-4 sm:p-6 select-none shrink-0">
+          <div
+            onClick={togglePlay}
+            className="relative w-full max-w-[300px] aspect-[9/16] bg-black rounded-2xl overflow-hidden border border-white/10 flex items-center justify-center cursor-pointer shadow-2xl group"
+          >
             {videoSrc ? (
               <video
                 ref={videoRef}
                 src={videoSrc}
                 className="w-full h-full object-cover"
                 playsInline
+                loop
                 onTimeUpdate={handleTimeUpdate}
                 onLoadedMetadata={handleLoadedMetadata}
                 onEnded={() => setIsPlaying(false)}
-                onClick={togglePlay}
               />
             ) : (
-              <div className="text-zinc-600 font-mono text-xs">1080 × 1920</div>
+              <div className="text-stone-500 font-mono text-xs">1080 × 1920</div>
             )}
 
-            {/* Play Overlay Button if paused */}
-            {!isPlaying && videoSrc && (
-              <button
-                onClick={togglePlay}
-                className="absolute inset-0 m-auto w-14 h-14 rounded-full bg-white text-black flex items-center justify-center shadow-lg transition-transform hover:scale-105 active:scale-95"
-              >
-                <Play className="w-6 h-6 translate-x-0.5 fill-black" />
-              </button>
+            {/* Subtle Vignette */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none" />
+
+            {/* Minimalist Floating Mute/Unmute Pill in Top-Right */}
+            <button
+              onClick={toggleMute}
+              className="absolute top-3 right-3 z-20 w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white border border-white/15 flex items-center justify-center hover:bg-black/80 transition-all shadow-md"
+              title={isMuted ? "Unmute audio" : "Mute audio"}
+            >
+              {isMuted ? <VolumeX className="w-4 h-4 text-orange-400" /> : <Volume2 className="w-4 h-4 text-white" />}
+            </button>
+
+            {/* Clean Center Play Icon When Paused */}
+            {!isPlaying && (
+              <div className="absolute inset-0 m-auto w-14 h-14 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white flex items-center justify-center shadow-xl pointer-events-none transition-transform group-hover:scale-110">
+                <Play className="w-6 h-6 translate-x-0.5 fill-white" />
+              </div>
             )}
 
-            {/* In-Player Bottom Controls Bar */}
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-3 pt-6 flex flex-col gap-2">
-              <input
-                type="range"
-                min="0"
-                max={duration || 100}
-                step="0.05"
-                value={currentTime}
-                onChange={handleSeek}
-                className="w-full h-1 bg-white/20 rounded-lg appearance-none cursor-pointer accent-white"
-              />
-
-              <div className="flex items-center justify-between text-xs text-white">
-                <div className="flex items-center gap-2">
-                  <button onClick={togglePlay} className="p-1 hover:text-zinc-300 transition-colors">
-                    {isPlaying ? <Pause className="w-3.5 h-3.5 fill-white" /> : <Play className="w-3.5 h-3.5 fill-white" />}
-                  </button>
-
-                  <div className="flex items-center gap-1">
-                    <button onClick={toggleMute} className="p-1 hover:text-zinc-300 transition-colors">
-                      {isMuted || volume === 0 ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5" />}
-                    </button>
-                    <input
-                      type="range"
-                      min="0"
-                      max="1"
-                      step="0.05"
-                      value={isMuted ? 0 : volume}
-                      onChange={handleVolumeChange}
-                      className="w-12 h-1 bg-white/20 rounded appearance-none cursor-pointer accent-white"
-                    />
-                  </div>
-
-                  <span className="font-mono text-[10px] tabular-nums text-zinc-300">
-                    {formatDuration(currentTime)} / {formatDuration(duration || video.duration_seconds)}
-                  </span>
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <div className="flex items-center gap-1 bg-black/60 px-1.5 py-0.5 rounded border border-white/10 text-[10px] font-mono">
-                    {[0.5, 1, 1.5, 2].map((rate) => (
-                      <button
-                        key={rate}
-                        onClick={() => changePlaybackRate(rate)}
-                        className={`px-1 py-0.5 rounded ${
-                          playbackRate === rate ? "bg-white text-black font-semibold" : "text-zinc-400 hover:text-white"
-                        }`}
-                      >
-                        {rate}x
-                      </button>
-                    ))}
-                  </div>
-
-                  <button onClick={toggleFullscreen} className="p-1 hover:text-zinc-300 transition-colors">
-                    <Maximize2 className="w-3 h-3" />
-                  </button>
-                </div>
+            {/* Minimalist Bottom Scrubber Bar (Edge-to-Edge, Non-Intrusive) */}
+            <div
+              onClick={handleSeek}
+              className="absolute bottom-0 inset-x-0 h-3 bg-black/30 flex items-end cursor-pointer group/bar"
+            >
+              <div className="w-full h-1 group-hover/bar:h-2 bg-white/20 transition-all relative">
+                <div
+                  className="h-full bg-orange-500 transition-all"
+                  style={{ width: `${progressPercent}%` }}
+                />
               </div>
             </div>
           </div>
         </div>
 
         {/* Right Side: Metadata, Captions, Actions */}
-        <div className="flex-1 p-6 lg:p-8 flex flex-col justify-between overflow-y-auto max-h-[92vh]">
-          <div className="space-y-6">
+        <div className="flex-1 p-5 sm:p-7 lg:p-8 flex flex-col justify-between overflow-y-auto max-h-[92vh]">
+          <div className="space-y-5">
             {/* Header info */}
             <div>
               <div className="flex items-center gap-2 flex-wrap mb-2">
-                <span className="text-[10px] font-mono tracking-[0.16em] uppercase font-medium px-2 py-0.5 rounded-md bg-brand/10 text-brand border border-brand/20">
+                <span className="text-[10px] font-mono tracking-wider uppercase font-bold px-2 py-0.5 rounded-md bg-orange-100 text-orange-800 border border-orange-200">
                   Day {video.episode_number.toString().padStart(2, "0")} / 100
                 </span>
                 <span
-                  className={`text-[10px] font-mono tracking-wider uppercase px-2 py-0.5 rounded-md border ${
+                  className={`text-[10px] font-mono tracking-wider uppercase px-2 py-0.5 rounded-md border font-semibold ${
                     video.status === "Published"
-                      ? "bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
+                      ? "bg-emerald-100 text-emerald-800 border-emerald-200"
                       : video.status === "Ready"
-                      ? "bg-brand/10 text-brand border-brand/20"
-                      : "bg-white/[0.04] text-zinc-400 border-white/[0.08]"
+                      ? "bg-orange-100 text-orange-800 border-orange-200"
+                      : "bg-stone-100 text-stone-600 border-stone-200"
                   }`}
                 >
                   {video.status}
                 </span>
-                <span className="text-xs text-zinc-500 font-mono">• {video.series_name}</span>
+                <span className="text-xs text-stone-500 font-mono">• {video.series_name}</span>
               </div>
 
               <h2 className="text-xl sm:text-2xl font-bold text-stone-900 tracking-[-0.02em] leading-snug">

@@ -198,16 +198,20 @@ export async function fetchVideoStats(): Promise<VideoStats> {
 }
 
 export async function getVideoPlayUrl(storagePath: string): Promise<string> {
-  if (storagePath.startsWith("http://") || storagePath.startsWith("https://") || storagePath.startsWith("/")) {
-    return storagePath;
-  }
-
-  if (storagePath === "sample-ep01.mp4") {
+  if (storagePath === "sample-ep01.mp4" || storagePath.includes("sample-ep01") || storagePath.includes("kokoro")) {
     return "/sample-ep01.mp4";
   }
 
-  if (storagePath === "sample-ep02.mp4" || storagePath.includes("Flux") || storagePath.includes("Day02")) {
+  if (storagePath === "sample-ep02.mp4" || storagePath.includes("Flux") || storagePath.includes("Day02") || storagePath.includes("sample-ep02")) {
     return "/sample-ep02.mp4";
+  }
+
+  if (storagePath === "sample-ep03.mp4" || storagePath.includes("copilot") || storagePath.includes("cline") || storagePath.includes("Continue") || storagePath.includes("Day03") || storagePath.includes("sample-ep03")) {
+    return "/sample-ep03.mp4";
+  }
+
+  if (storagePath.startsWith("http://") || storagePath.startsWith("https://") || storagePath.startsWith("/")) {
+    return storagePath;
   }
 
   if (isSupabaseConfigured()) {
@@ -253,6 +257,10 @@ export async function getVideoDownloadUrl(video: VideoRecord): Promise<{ url: st
   // Fallback for sample file or direct public storage URL
   if (video.storage_path.startsWith("http://") || video.storage_path.startsWith("https://")) {
     return { url: video.storage_path, filename };
+  }
+
+  if (video.storage_path.includes("ep03") || video.episode_number === 3) {
+    return { url: "/sample-ep03.mp4", filename };
   }
 
   if (video.storage_path.includes("ep02") || video.episode_number === 2) {
