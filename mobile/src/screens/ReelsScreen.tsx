@@ -64,9 +64,10 @@ function ReelItem({
     item.video_url ||
     `https://tqtfkuhtvkevqhhmnkfv.supabase.co/storage/v1/object/public/videos/sample-ep0${item.episode_number}.mp4`;
 
+  // Always initialize muted to prevent multi-player sound bleed
   const player = useVideoPlayer(videoUri, (p) => {
     p.loop = true;
-    p.muted = isMuted;
+    p.muted = isActive ? isMuted : true;
     if (isActive) {
       p.play();
     } else {
@@ -74,19 +75,20 @@ function ReelItem({
     }
   });
 
-  useEffect(() => {
-    player.muted = isMuted;
-  }, [isMuted, player]);
-
+  // STRICT SINGLE-ACTIVE AUDIO ENFORCEMENT:
+  // If this item is NOT active, FORCE MUTE and PAUSE immediately!
+  // This guarantees only ONE audio track plays at any given second.
   useEffect(() => {
     if (isActive) {
-      player.play();
-      setIsPlaying(true);
+      player.muted = isMuted;
+      if (isPlaying) {
+        player.play();
+      }
     } else {
+      player.muted = true;
       player.pause();
-      setIsPlaying(false);
     }
-  }, [isActive, player]);
+  }, [isActive, isMuted, isPlaying, player]);
 
   const handleTogglePlay = () => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
@@ -358,6 +360,10 @@ export function ReelsScreen() {
         snapToInterval={WINDOW_HEIGHT}
         snapToAlignment="start"
         decelerationRate="fast"
+        initialNumToRender={1}
+        maxToRenderPerBatch={2}
+        windowSize={3}
+        removeClippedSubviews={Platform.OS === "android"}
         onViewableItemsChanged={onViewableItemsChanged}
         viewabilityConfig={viewabilityConfig}
         refreshing={loading}
