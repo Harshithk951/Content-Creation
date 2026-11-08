@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": false,
+    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -42,7 +42,8 @@
       "instagramUrl": "https://instagram.com/harshith.claude"
     },
     "plugins": [
-      "expo-asset"
+      "expo-asset",
+      "expo-video"
     ]
   }
 }
