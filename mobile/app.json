@@ -16,7 +16,9 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.harshith.freeai",
       "infoPlist": {
-        "UIBackgroundModes": ["audio"]
+        "UIBackgroundModes": [
+          "audio"
+        ]
       }
     },
     "android": {
@@ -46,6 +48,9 @@
       "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRxdGZrdWh0dmtldnFoaG1ua2Z2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUyNDEyMDMsImV4cCI6MjA3MDgxNzIwM30.yXNC4ibZmHtO0o6BEttF7sBET4sF49Kr4vmGkHu3-C4",
       "notionGuideUrl": "https://app.notion.com/p/40f7cd75d68b81bda8d6e3bf4a7e4866",
       "instagramUrl": "https://instagram.com/harshith.claude"
-    }
+    },
+    "plugins": [
+      "expo-asset"
+    ]
   }
 }
