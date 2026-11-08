@@ -2,9 +2,9 @@
   "name": "100-days-of-free-ai",
   "version": "1.0.0",
   "scripts": {
-    "start": "expo start",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "start": "DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer expo start",
+    "android": "expo start --android",
+    "ios": "DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer expo start --ios",
     "web": "expo start --web",
     "build:apk": "eas build -p android --profile preview"
   },
